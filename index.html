@@ -20,7 +20,8 @@
   <div class="header__inner">
 
     <a href="#" class="header__logo">
-      美宵 <span>- YOI -</span>
+      <img src="images/logo.png" alt="美宵 - YOI -" class="header__logo-img">
+      <span class="header__logo-text">美宵 <small>- YOI -</small></span>
     </a>
 
     <button class="header__toggle" id="menuToggle">
@@ -32,13 +33,13 @@
   </div>
 
   <nav class="header__nav" id="menu">
-  <a href="#service">Service</a>
-  <a href="#price">Price</a>
-  <a href="#style">Style</a>
-  <a href="#flow">Flow</a>
-  <a href="#faq">FAQ</a>
-  <a href="#reserve">Reserve</a>
-</nav>
+    <a href="#service">Service</a>
+    <a href="#price">Price</a>
+    <a href="#style">Style</a>
+    <a href="#flow">Flow</a>
+    <a href="#faq">FAQ</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
 </header>
 
 <main>
@@ -244,7 +245,30 @@
   </div>
 </section>
 
-  <section id="style" class="style section">
+<section class="profile section">
+  <div class="container">
+
+    <p class="section__label">Profile</p>
+    <h2 class="section__title">安心してお任せいただくために</h2>
+
+    <div class="profile__inner">
+  <div class="profile__img">
+    <img src="images/profile.jpg" alt="着付け師">
+  </div>
+
+  <div class="profile__text">
+    <h3>板橋 亜由美</h3>
+    <p>
+      一人ひとりに寄り添い、
+      大切な一日を美しく整えるお手伝いをしています。
+    </p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+  <section id="style" class="style section--alt">
   <div class="container">
     <p class="section__label">Style</p>
     <h2 class="section__title">装いの仕上がり</h2>
@@ -266,7 +290,7 @@
   </div>
 </section>
 
-<section id="flow" class="flow section--alt">
+<section id="flow" class="flow section">
   <div class="container">
 
     <p class="section__label">Flow</p>
@@ -326,7 +350,7 @@
   </div>
 </section>
 
-  <section id="faq" class="faq section">
+  <section id="faq" class="faq section--alt">
   <div class="container">
     <p class="section__label">FAQ</p>
     <h2 class="section__title">よくあるご質問</h2>
@@ -374,7 +398,7 @@
   </div>
 </section>
 
-  <section class="area section--alt">
+  <section class="area section">
   <div class="container">
 
     <p class="section__label">Area</p>
@@ -437,19 +461,21 @@
 </section>
 </main>
 
-<footer class="footer section--alt">
+<footer class="footer section">
   <div class="container">
 
-    <p class="footer__logo">
-      美宵 <span>- YOI -</span>
-    </p>
+    <div class="footer__brand">
+      <img src="images/logo.png" alt="美宵 - YOI -" class="footer__logo-img">
+      <p class="footer__logo-text">美宵 <span>- YOI -</span></p>
+    </div>
 
-    <!-- ナビ（軽め） -->
     <nav class="footer__nav">
       <a href="#service">Service</a>
       <a href="#price">Price</a>
+      <a href="#style">Style</a>
       <a href="#flow">Flow</a>
       <a href="#faq">FAQ</a>
+      <a href="#reserve">Reserve</a>
     </nav>
 
     <nav class="footer__links">
@@ -457,14 +483,7 @@
       <a href="law.html">特定商取引法に基づく表記</a>
     </nav>
 
-    <!-- SNS -->
-    <div class="footer__sns">
-      <a href="#">Instagram</a>
-    </div>
-
-    <p class="footer__copy">
-      © 2026 美宵 - YOI -
-    </p>
+    <p class="footer__copy">© 美宵 - YOI -</p>
 
   </div>
 </footer>
