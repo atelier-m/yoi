@@ -222,18 +222,29 @@ img {
 }
 
 .header__logo {
-  position: relative;
-  z-index: 310;
-
-  font-family: var(--font-serif);
-  font-size: 20px;
-  letter-spacing: 0.08em;
-  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.header__logo span {
-  font-size: 11px;
-  margin-left: 6px;
+.header__logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.header__logo-text {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  line-height: 1;
+}
+
+.header__logo-text small {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
 }
 
 .header__toggle {
@@ -254,7 +265,7 @@ img {
 
   width: 100%;
   height: 2px;
-  background: var(--navy);
+  background: var(--navy-soft);
   transition: 0.3s ease;
 }
 
@@ -723,6 +734,62 @@ img {
 }
 
 /* =========================
+  Profile（上質版）
+========================= */
+
+.profile__inner {
+  margin-top: 40px;
+}
+
+.profile__img {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.profile__img img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* ほんのりズーム */
+.profile__img:hover img {
+  transform: scale(1.03);
+}
+
+/* 下に余白で空気感 */
+.profile__text {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.profile__text h3 {
+  margin: 0 0 14px;
+  font-family: var(--font-serif);
+  font-size: 24px;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+}
+
+.profile__text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.1;
+  letter-spacing: 0.06em;
+  color: var(--text-soft);
+}
+
+/* PC */
+@media (min-width: 768px) {
+  .profile__inner {
+    max-width: 520px;
+    margin-inline: auto;
+  }
+}
+
+/* =========================
   Style
 ========================= */
 
@@ -1050,29 +1117,58 @@ img {
 ========================= */
 
 .footer {
-  background: var(--bg-main); /* ←自然に馴染ませる */
-  color: var(--navy);
-  padding: 64px 0 40px;
-  text-align: center;
+  position: relative;
+  background: var(--bg-main);
+  padding: 48px 0 32px;
+  margin-top: 0;
+  z-index: 1;
 }
 
-/* ロゴ */
-.footer__logo {
+/* ネイビーからフッターへ、上側だけふわっと繋ぐ */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  pointer-events: none;
+  z-index: -1;
+
+  background: linear-gradient(
+    to bottom,
+    var(--navy) 0%,
+    var(--bg-main) 100%
+  );
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.footer__logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  margin-top: 20px; 
+}
+
+.footer__logo-text {
+  margin-top: 8px;
   font-family: var(--font-serif);
-  font-size: 20px;
-  letter-spacing: 0.1em;
-  margin: 0 0 20px;
-  transition: opacity 0.3s ease;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  color: var(--navy);
 }
 
-.footer__logo:hover {
-  opacity: 0.85;
-}
-
-.footer__logo span {
-  font-size: 12px;
-  opacity: 0.6;
-  margin-left: 6px;
+.footer__logo-text span {
+  font-size: 11px;
+  opacity: 0.7;
+  margin-left: 4px;
 }
 
 /* 共通リンク */
@@ -1091,11 +1187,12 @@ img {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .footer__nav a {
-  font-size: 13px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
   color: var(--text-soft);
 }
 
