@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <path d="M18 39.5C12.8 36.6 10 32.3 10 27.5C10 18.9 19.8 12 32 12C44.2 12 54 18.9 54 27.5C54 36.1 44.2 43 32 43C29.8 43 27.7 42.8 25.8 42.3L17 48L18 39.5Z"
+        stroke="#1c2f4a"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  
+  <text x="32" y="32"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-size="12"
+        fill="#1c2f4a"
+        font-family="sans-serif"
+        letter-spacing="1">
+    LINE
+  </text>
+</svg>
