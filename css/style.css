@@ -481,7 +481,7 @@ img {
 
   background: url("../images/shadow-leaf.png") center/cover no-repeat;
 
-  opacity: 0.08;
+  opacity: 0.50;
   mix-blend-mode: multiply;
 
   pointer-events: none;
@@ -1058,6 +1058,9 @@ img {
 /* =========================
   Area 
 ========================= */
+.area.section {
+  padding-bottom: 0;
+}
 
 .area {
   text-align: center;
@@ -1126,6 +1129,7 @@ img {
 ========================= */
 
 .reserve {
+  margin-top: 0;
   background: var(--navy);
   color: #fff;
   text-align: center;
@@ -1498,10 +1502,6 @@ img {
 
 @media (min-width: 1024px) {
 
-  .container {
-    width: min(100% - 96px, var(--container));
-  }
-
   .section {
     padding: var(--section-space) 0;
   }
@@ -1548,4 +1548,61 @@ img {
   .reserve .container {
     max-width: 640px;
   }
+
+/* =========================
+  PC Center Balance
+========================= */
+  .container {
+    width: min(100% - 80px, 960px);
+  }
+
+  .service__body,
+  .price__list,
+  .strength__list,
+  .profile__inner,
+  .style__gallery,
+  .flow__list,
+  .faq__list {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service__body {
+    grid-template-columns: 1fr 240px;
+    gap: 56px;
+    align-items: center;
+  }
+
+/* =========================
+  Service　
+========================= */
+
+.service__body {
+    max-width: 900px;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 320px;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .service__image {
+    margin-left: 0;
+    transform: none;
+  }
+
+  .service__image img {
+  width: 240px;
+  height: 240px;
+}
+
+/* =========================
+  area　
+========================= */
+
+.area__image img {
+    height: 320px;
+  }
+
 }
