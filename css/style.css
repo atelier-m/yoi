@@ -73,12 +73,26 @@ img {
 
 .section {
   padding: var(--section-space-sp) 0;
-  background: var(--bg-main);
+
+  background:
+    radial-gradient(
+      circle at 20% 10%,
+      rgba(255,255,255,0.45),
+      transparent 34%
+    ),
+    var(--bg-main);
 }
 
 .section--alt {
   padding: var(--section-space-sp) 0;
-  background: var(--bg-soft);
+
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(255,255,255,0.35),
+      transparent 36%
+    ),
+    var(--bg-soft);
 }
 
 .section__label {
@@ -88,6 +102,23 @@ img {
   letter-spacing: 0.18em;
   color: var(--silver-deep);
   text-align: center;
+}
+
+.section__label::after {
+  content: "";
+  display: block;
+
+  width: 72px;
+  height: 1px;
+
+  margin: 14px auto 0;
+
+background: linear-gradient(
+  to right,
+  transparent,
+  rgba(28, 47, 74, 0.12),
+  transparent
+);
 }
 
 .section__title {
@@ -561,7 +592,9 @@ img {
   width: min(100%, 520px);
   overflow: hidden;
   border-radius: var(--radius-lg);
-  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+  box-shadow:
+    0 18px 45px rgba(28, 47, 74, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.45);
 }
 
 .concept__img {
@@ -727,7 +760,9 @@ img {
   border-radius: 20px;
   background: #f7f3ee;
   border: 1px solid #e8e2dc;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+ box-shadow:
+    0 18px 45px rgba(28, 47, 74, 0.06),
+    inset 0 1px 0 rgba(255,255,255,0.55);
 
   opacity: 0;
   transform: translateY(20px);
@@ -833,7 +868,9 @@ img {
   border-radius: var(--radius-lg);
   max-width: 260px;
   margin: 0 auto;
-  box-shadow: 0 12px 30px rgba(28, 47, 74, 0.08);
+box-shadow:
+    0 18px 45px rgba(28, 47, 74, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.45);
 }
 
 /* 画像本体 */
@@ -926,7 +963,9 @@ img {
   object-fit: cover;
   border-radius: var(--radius-md);
 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  box-shadow:
+    0 18px 45px rgba(28, 47, 74, 0.08),
+    inset 0 1px 0 rgba(255,255,255,0.45);
 
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   will-change: transform;
@@ -983,6 +1022,9 @@ img {
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  box-shadow:
+    0 18px 45px rgba(28, 47, 74, 0.06),
+    inset 0 1px 0 rgba(255,255,255,0.55);
 }
 
 /* 番号 */
@@ -1260,6 +1302,9 @@ img {
 
   backdrop-filter: blur(6px);
   overflow: hidden;
+  box-shadow:
+    0 18px 45px rgba(28, 47, 74, 0.06),
+    inset 0 1px 0 rgba(255,255,255,0.55);
 }
 
 /* quotation */
@@ -1530,7 +1575,7 @@ img {
   PC Layout
 ========================= */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
   .container {
     width: min(100% - 80px, 960px);
@@ -1686,13 +1731,29 @@ img {
   }
 
   .flow__item {
-    display: block;
-    text-align: center;
-    padding: 28px 20px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-md);
-    background: rgba(255, 250, 245, 0.65);
-  }
+  display: block;
+  text-align: center;
+  padding: 28px 20px;
+
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+
+  background: rgba(255, 250, 245, 0.65);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.flow__item:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(28, 47, 74, 0.12);
+
+  box-shadow:
+    0 18px 40px rgba(28, 47, 74, 0.05);
+}
 
   .flow__num {
     margin: 0 auto 18px;
