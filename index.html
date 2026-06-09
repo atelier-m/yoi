@@ -189,13 +189,14 @@
   <section id="price" class="price section">
    <div class="container">
 
-    <p class="section__label">Price</p>
+    <p class="section__label">Menu</p>
 
     <h2 class="section__title">
-      料金について
+ご案内メニュー
     </h2>
     <p class="price__lead">
-      ご希望に合わせて、最適なご提案をさせていただきます。
+      お着物の種類やご利用シーンに合わせて、
+ご案内しております。
     </p>
 
     <ul class="price__list">
@@ -224,7 +225,7 @@
 
     <div class="price__detail-link">
       <a href="price.html" class="btn btn--primary">
-        詳しい料金を見る
+        メニュー詳細を見る
       </a>
     </div>
 
@@ -316,9 +317,9 @@
     </p>
 
     <div class="style__gallery">
-      <img src="images/style01.jpg" class="style__img style__img--main">
-      <img src="images/style02.jpg" class="style__img style__img--right">
-      <img src="images/style03.jpg" class="style__img style__img--left">
+      <img src="images/style01.jpg" alt="" class="style__img js-lightbox" data-index="0">
+<img src="images/style02.jpg" alt="" class="style__img js-lightbox" data-index="1">
+<img src="images/style03.jpg" alt="" class="style__img js-lightbox" data-index="2">
     </div>
 
     <p class="style__text">
@@ -543,9 +544,6 @@
         美宵 <span>- YOI -</span>
       </p>
 
-      <p class="footer__concept">
-        京都の出張着付け
-      </p>
     </div>
 
     <nav class="footer__nav">
@@ -570,5 +568,13 @@
      <a href="#reserve" class="fixed-line">
   LINEで予約
 </a>
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" id="lightboxClose">×</button>
+  <button class="lightbox__prev" id="lightboxPrev">‹</button>
+
+  <img src="" alt="" class="lightbox__img" id="lightboxImg">
+
+  <button class="lightbox__next" id="lightboxNext">›</button>
+</div>
 </body>
 </html>

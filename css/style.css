@@ -913,34 +913,6 @@ box-shadow:
 }
 
 /* =========================
-  PC
-========================= */
-
-@media (min-width: 768px) {
-  .profile__inner {
-    display: flex;
-    align-items: center;
-    gap: 48px;
-    max-width: 720px;
-    margin-inline: auto;
-  }
-
-  .profile__img {
-    flex-shrink: 0;
-    max-width: 220px;
-  }
-
-  .profile__text {
-    margin-top: 0;
-    text-align: left;
-  }
-
-  .profile__text p {
-    margin-inline: 0;
-  }
-}
-
-/* =========================
   Style
 ========================= */
 
@@ -1006,6 +978,68 @@ box-shadow:
 
 .style.section {
   padding-bottom: 120px;
+}
+
+/* ライトボックス */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(28, 47, 74, 0.82);
+  backdrop-filter: blur(8px);
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox__img {
+  max-width: min(88vw, 900px);
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+.lightbox__close,
+.lightbox__prev,
+.lightbox__next {
+  position: absolute;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--navy);
+  cursor: pointer;
+}
+
+.lightbox__close {
+  top: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 28px;
+}
+
+.lightbox__prev,
+.lightbox__next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 34px;
+}
+
+.lightbox__prev {
+  left: 20px;
+}
+
+.lightbox__next {
+  right: 20px;
 }
 
 /* =========================
@@ -1704,6 +1738,29 @@ box-shadow:
   .service__image img {
     width: 340px;
     height: 340px;
+  }
+
+  /* profile */
+  .profile__inner {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .profile__img {
+    flex-shrink: 0;
+    max-width: 220px;
+  }
+
+  .profile__text {
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .profile__text p {
+    margin-inline: 0;
   }
 
   /* common widths */
