@@ -936,6 +936,8 @@ box-shadow:
   object-fit: cover;
   border-radius: var(--radius-md);
 
+  cursor: zoom-in;
+
   box-shadow:
     0 18px 45px rgba(28, 47, 74, 0.08),
     inset 0 1px 0 rgba(255,255,255,0.45);
@@ -947,7 +949,9 @@ box-shadow:
 /* hover */
 .style__img:hover {
   transform: scale(1.03) translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  box-shadow:
+    0 18px 45px rgba(28, 47, 74, 0.12),
+    inset 0 1px 0 rgba(255,255,255,0.45);
 }
 
 /* メイン */
@@ -999,19 +1003,26 @@ box-shadow:
 }
 
 .lightbox__img {
-  max-width: min(88vw, 900px);
+   max-width: min(88vw, 900px);
   max-height: 82vh;
   object-fit: contain;
   border-radius: var(--radius-md);
+  cursor: default;
 }
 
 .lightbox__close,
 .lightbox__prev,
 .lightbox__next {
   position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: none;
   background: rgba(255, 255, 255, 0.9);
   color: var(--navy);
+
   cursor: pointer;
 }
 
@@ -1800,6 +1811,12 @@ box-shadow:
     transform: none;
   }
 
+  .style__img:hover,
+.style__img--main:hover,
+.style__img--right:hover,
+.style__img--left:hover {
+  transform: scale(1.03) translateY(-4px);
+}
   /* flow */
   .flow__list {
     max-width: 1040px;
