@@ -1120,6 +1120,19 @@ box-shadow:
   background: #e5ddd3;
 }
 
+.flow__cta {
+  margin: 48px auto 0;
+  max-width: 520px;
+  text-align: center;
+}
+
+.flow__cta-text {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 2;
+  color: var(--text-soft);
+}
+
 /* =========================
   FAQ
 ========================= */
