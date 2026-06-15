@@ -1136,6 +1136,9 @@ box-shadow:
 /* =========================
   FAQ
 ========================= */
+.faq.section {
+  padding-bottom: 0;
+}
 
 .faq {
   text-align: center;
@@ -1216,13 +1219,8 @@ box-shadow:
 /* =========================
   Area 
 ========================= */
-.area.section {
-  padding-bottom: 0;
-}
-
 .area {
   text-align: center;
-  padding-bottom: 0;
 }
 
 .area__text {
