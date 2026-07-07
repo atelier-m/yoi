@@ -1749,6 +1749,10 @@ box-shadow:
     display: none;
   }
 
+.main {
+    padding-top: 72px;
+}
+
   /* service */
   .service__body {
     max-width: 768px;
