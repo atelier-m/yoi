@@ -1632,7 +1632,7 @@ box-shadow:
 @media (min-width: 768px) {
 
   .container {
-    width: min(100% - 80px, 960px);
+    width: min(100% - 80px, 768px);
   }
 
   .section {
@@ -1660,7 +1660,7 @@ box-shadow:
   }
 
   .header__inner {
-    width: min(100% - 80px, 960px);
+    width: min(100% - 80px, 768px);
     height: 72px;
     display: flex;
     align-items: center;
@@ -1743,13 +1743,13 @@ box-shadow:
 
   /* service */
   .service__body {
-    max-width: 960px;
+    max-width: 768px;
     margin-inline: auto;
 
     display: grid;
     grid-template-columns: 1fr 340px;
     align-items: center;
-    gap: 96px;
+    gap: 56px;
   }
 
   .service__image {
