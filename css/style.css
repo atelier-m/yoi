@@ -444,15 +444,17 @@ background: linear-gradient(
 /* =========================
  　Main
 ========================= */
-
 main {
   padding-top: 72px;
+}
+
+.subpage-main {
+  padding-top: 140px;
 }
 
 /* =========================
   Hero
 ========================= */
-
 /* 画像 */
 .hero__image {
   position: relative;
@@ -1749,8 +1751,13 @@ box-shadow:
     display: none;
   }
 
+    /* main */
 .main {
     padding-top: 72px;
+}
+
+.subpage-main {
+  padding-top: 140px;
 }
 
   /* service */
