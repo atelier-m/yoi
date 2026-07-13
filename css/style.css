@@ -1268,7 +1268,6 @@ box-shadow:
 
 .voice {
   overflow: hidden;
-  background: #fbf8f5;
 }
 
 .voice__lead {
@@ -1331,7 +1330,7 @@ box-shadow:
 }
 
 .voice-card.is-active {
-  background: #f1e6dc;
+  background: var(--bg-soft);
 
   opacity: 1;
 
