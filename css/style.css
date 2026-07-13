@@ -696,14 +696,14 @@ main {
 }
 
 /* =========================
-  Price
+  menu
 ========================= */
 
-.price {
+.menu {
   text-align: center;
 }
 
-.price__lead {
+.menu__lead {
   margin-top: 28px;
 
   font-size: 12px;
@@ -711,7 +711,7 @@ main {
   color: var(--silver-deep);
 }
 
-.price__list {
+.menu__list {
   margin: 30px auto 0;
   padding: 0;
   list-style: none;
@@ -720,7 +720,7 @@ main {
   border-top: 1px solid var(--line);
 }
 
-.price__item {
+.menu__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -729,7 +729,7 @@ main {
   border-bottom: 1px solid rgba(0,0,0,0.04);
 }
 
-.price__name {
+.menu__name {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -739,21 +739,21 @@ main {
   color: var(--silver-deep);
 }
 
-.price__value {
+.menu__value {
   font-family: var(--font-serif);
   font-size: 18px;
   color: var(--navy);
   letter-spacing: 0.05em;
 }
 
-.price__detail-link {
+.menu__detail-link {
   margin-top: 34px;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.price__note {
+.menu__note {
   margin-top: 28px;
 
   font-size: 12px;
@@ -1859,7 +1859,7 @@ box-shadow:
 }
 
 /* =========================
-  Price Detail Page
+  menu Detail Page
 ========================= */
 
 /* ページ導入 */
@@ -1947,7 +1947,7 @@ box-shadow:
   color: var(--silver-deep);
 }
 
-.menu-item__price {
+.menu-item__menu {
   flex-shrink: 0;
   margin: 0;
 
@@ -2002,7 +2002,7 @@ box-shadow:
   color: var(--text-soft);
 }
 
-.usage-item__price {
+.usage-item__menu {
   flex-shrink: 0;
 
   font-family: var(--font-serif);
@@ -2123,7 +2123,7 @@ box-shadow:
 }
 
 /* =========================
-  Price PC
+  menu PC
 ========================= */
 
 @media (min-width: 1024px) {
@@ -2332,7 +2332,7 @@ box-shadow:
   /* common widths */
   .concept__visual,
   .concept__text,
-  .price__list,
+  .menu__list,
   .strength__list,
   .profile__inner,
   .style__gallery {
@@ -2497,7 +2497,7 @@ box-shadow:
 }
 
 /* =========================
-  Price Tablet / PC
+  menu Tablet / PC
 ========================= */
 
   .menu-heading {
@@ -2524,7 +2524,7 @@ box-shadow:
     font-size: 12px;
   }
 
-  .menu-item__price {
+  .menu-item__menu {
     font-size: 19px;
   }
 
