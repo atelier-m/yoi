@@ -463,12 +463,20 @@ main {
 /* =========================
   Hero
 ========================= */
+
+.hero {
+  overflow: hidden;
+  background: var(--bg-main);
+}
+
 /* 画像 */
 .hero__image {
   position: relative;
-  min-height: 62vh;
+  min-height: 58svh;
 
-  background: url("../images/yoi_hero.jpg") 70% center / cover no-repeat;
+  background:
+    url("../images/yoi_hero.jpg")
+    70% center / cover no-repeat;
 }
 
 .hero__image::after {
@@ -478,17 +486,20 @@ main {
 
   background: linear-gradient(
     to bottom,
-    rgba(255,255,255,0) 60%,
-    rgba(247,243,238,1) 100%
+    rgba(247, 243, 238, 0) 68%,
+    rgba(247, 243, 238, 0.55) 86%,
+    var(--bg-main) 100%
   );
 }
 
 /* テキスト */
 .hero__content {
-  width: min(100% - 40px, 520px);
-  margin-inline: auto;
+  position: relative;
+  z-index: 1;
 
-  padding: 56px 0 80px;
+  width: min(100% - 40px, 520px);
+  margin: -28px auto 0;
+  padding: 32px 0 72px;
 }
 
 .hero__label {
@@ -521,7 +532,6 @@ main {
   color: var(--text-soft);
 }
 
-/* ボタン */
 .hero__actions {
   margin-top: 20px;
 }
@@ -2174,14 +2184,16 @@ box-shadow:
     padding: var(--section-space) 0;
   }
 
+  /* hero */
   .hero__image {
-    min-height: 72vh;
+    min-height: 52svh;
     background-position: center;
   }
 
   .hero__content {
-    max-width: 560px;
-    padding: 72px 0 96px;
+    max-width: 540px;
+    margin-top: -56px;
+    padding: 32px 0 64px;
   }
 
   /* header */
