@@ -153,20 +153,21 @@ background: linear-gradient(
 /* =========================
   Button
 ========================= */
-
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
 
   width: 100%;
-  min-height: 48px;
-  padding: 14px 24px;
+  min-height: 52px;
+
+  padding: 14px 28px;
 
   border-radius: 999px;
 
   font-size: 14px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.10em;
+
   text-align: center;
   text-decoration: none;
 
@@ -555,6 +556,12 @@ main {
 
 .hero__actions {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__actions .btn {
+  width: min(100%, 460px);
 }
 
 .hero__divider {
