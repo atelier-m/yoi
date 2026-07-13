@@ -72,3 +72,56 @@ lightboxNext.addEventListener("click", showNext);
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
 });
+
+//Voice Slider
+const voiceTrack = document.querySelector(".voice-slider__track");
+const voiceCards = document.querySelectorAll(".voice-card");
+const voiceDots = document.querySelectorAll(".voice-slider__dot");
+
+if (voiceTrack && voiceCards.length && voiceDots.length) {
+  let currentIndex = 0;
+
+  const updateVoiceSlider = () => {
+    const activeCard = voiceCards[currentIndex];
+    const viewport = voiceTrack.parentElement;
+
+    if (!activeCard || !viewport) {
+      return;
+    }
+
+    const viewportCenter = viewport.clientWidth / 2;
+    const cardCenter =
+      activeCard.offsetLeft + activeCard.offsetWidth / 2;
+
+    const translateX = viewportCenter - cardCenter;
+
+    voiceTrack.style.transform = `translateX(${translateX}px)`;
+
+    voiceCards.forEach((card, index) => {
+      card.classList.toggle("is-active", index === currentIndex);
+    });
+
+    voiceDots.forEach((dot, index) => {
+      const isActive = index === currentIndex;
+
+      dot.classList.toggle("is-active", isActive);
+
+      if (isActive) {
+        dot.setAttribute("aria-current", "true");
+      } else {
+        dot.removeAttribute("aria-current");
+      }
+    });
+  };
+
+  voiceDots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentIndex = index;
+      updateVoiceSlider();
+    });
+  });
+
+  window.addEventListener("resize", updateVoiceSlider);
+
+  updateVoiceSlider();
+}
