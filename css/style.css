@@ -968,16 +968,19 @@ main {
     font-size: 12px;
   }
 
-  .voice-slider__dots {
-    gap: 18px;
-    margin-top: 34px;
-  }
+.voice-slider__dots {
+  gap: 8px;
+  margin-top: 34px;
+}
 
-  .voice-slider__dot {
-    width: 11px;
-    height: 11px;
-  }
+.voice-slider__dot {
+  width: 26px;
+  height: 3px;
+}
 
+.voice-slider__dot.is-active {
+  width: 42px;
+}
 }
 
 /* =========================
@@ -1380,26 +1383,25 @@ box-shadow:
 .voice-slider__dots {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 22px;
+  gap: 10px;
 
   margin-top: 42px;
 }
 
 .voice-slider__dot {
-  width: 13px;
-  height: 13px;
+  width: 34px;
+  height: 3px;
   padding: 0;
 
   border: none;
-  border-radius: 50%;
-  background: rgba(28, 47, 74, 0.12);
+  border-radius: 999px;
+
+  background: rgba(28, 47, 74, 0.15);
 
   cursor: pointer;
-
   transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
+  width .35s cubic-bezier(.22,1,.36,1),
+  background-color .35s ease;
 }
 
 .voice-slider__dot:hover {
@@ -1407,8 +1409,8 @@ box-shadow:
 }
 
 .voice-slider__dot.is-active {
+  width: 52px;
   background: var(--navy);
-  transform: scale(1.08);
 }
 
 /* =========================
@@ -1642,82 +1644,6 @@ box-shadow:
   line-height: 2;
   letter-spacing: 0.05em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-/* =========================
-  Reserve Voice
-========================= */
-
-.reserve__voice-label {
-  margin: 44px 0 18px;
-
-  font-family: var(--font-serif);
-  font-size: 15px;
-  letter-spacing: 0.12em;
-  color: rgba(255,255,255,0.78);
-
-  text-align: center;
-}
-
-.reserve__voice {
-  display: grid;
-  gap: 16px;
-}
-
-.reserve__voice-item {
-  position: relative;
-
-  padding: 22px 20px;
-  border-radius: var(--radius-md);
-
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-
-  backdrop-filter: blur(6px);
-  overflow: hidden;
-  box-shadow:
-    0 18px 45px rgba(28, 47, 74, 0.06),
-    inset 0 1px 0 rgba(255,255,255,0.55);
-}
-
-/* quotation */
-.reserve__voice-item::before {
-  content: "“";
-  position: absolute;
-  top: 4px;
-  right: 16px;
-
-  font-family: var(--font-serif);
-  font-size: 56px;
-  line-height: 1;
-
-  color: rgba(255,255,255,0.06);
-}
-
-.reserve__voice-text {
-  position: relative;
-  z-index: 1;
-
-  margin: 0;
-
-  font-size: 13px;
-  line-height: 2;
-  letter-spacing: 0.05em;
-
-  color: rgba(255,255,255,0.92);
-}
-
-.reserve__voice-meta {
-  position: relative;
-  z-index: 1;
-
-  display: block;
-  margin-top: 12px;
-
-  font-size: 11px;
-  letter-spacing: 0.08em;
-
-  color: rgba(255,255,255,0.58);
 }
 
 /* =========================
