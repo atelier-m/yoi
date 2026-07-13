@@ -1770,8 +1770,13 @@ box-shadow:
 .footer__links {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  align-items: center;
+  gap: 24px;
   flex-wrap: wrap;
+
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(28, 47, 74, 0.08);
   margin-bottom: 20px;
 }
 
@@ -2487,12 +2492,8 @@ box-shadow:
   transform: translateX(2px);
 }
 
-  .footer__bottom {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-
-  margin-top: 42px;
+.footer__links{
+  gap: 36px;
 }
 
 /* =========================
