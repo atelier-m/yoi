@@ -1275,6 +1275,7 @@ box-shadow:
   margin-top: 22px;
 
   font-size: 14px;
+  text-align: center;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-soft);
