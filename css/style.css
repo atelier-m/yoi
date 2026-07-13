@@ -1706,6 +1706,16 @@ box-shadow:
   margin-left: 4px;
 }
 
+.footer__message {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+  color: var(--text-soft);
+  text-align: center;
+  opacity: 0.75;
+}
+
 /* 共通リンク */
 .footer a {
   position: relative;
