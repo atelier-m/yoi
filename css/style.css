@@ -614,17 +614,18 @@ main {
 }
 
 .for-you__panel::before {
-  inset: auto 0 0 auto;
-
-  width: 75%;
-  height: 55%;
+  content: "";
+  position: absolute;
+  inset: 0;
 
   background:
     url("../images/shadow-leaf.png")
-    right bottom / contain no-repeat;
+    right bottom / 72% auto no-repeat;
 
-  opacity: 0.32;
+  opacity: 0.42;
   mix-blend-mode: multiply;
+
+  pointer-events: none;
 }
 
 /* テキストを装飾より前面へ */
@@ -2345,10 +2346,17 @@ box-shadow:
 }
 
 .for-you__panel::before {
-  background-size: 90% auto;
-  background-position: right bottom;
-  opacity: 0.42;
-}
+    inset: auto 0 0 auto;
+
+    width: 80%;
+    height: 50%;
+
+    background:
+      url("../images/shadow-leaf.png")
+      right bottom / contain no-repeat;
+
+    opacity: 0.32;
+  }
 
 .for-you__en {
   margin-bottom: 50px;
