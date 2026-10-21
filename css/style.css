@@ -639,6 +639,45 @@ main {
 }
 
 /* =========================
+  Concept - Smartphone
+========================= */
+
+@media (max-width: 767px) {
+
+  .concept .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 文章を先に表示 */
+  .concept__content {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 写真を文章の下に表示 */
+  .concept__visual {
+    order: 2;
+    width: 100%;
+    margin: 40px auto 0;
+  }
+
+  .concept__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .concept__heading .section__label,
+  .concept__heading .section__title {
+    text-align: center;
+  }
+
+}
+
+/* =========================
   Service
 ========================= */
 .service {
@@ -2284,6 +2323,10 @@ box-shadow:
 .concept__heading .section__title {
   margin: 0;
   text-align: left;
+}
+
+.concept__heading .section__label::after {
+  margin-left: 0;
 }
 
 /* 本文全体 */
