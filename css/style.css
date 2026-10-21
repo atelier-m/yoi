@@ -1528,7 +1528,7 @@ box-shadow:
 /* =========================
   FAQ
 ========================= */
-.faq.section {
+.faq.section--alt {
   padding-bottom: 0;
 }
 
@@ -2792,4 +2792,13 @@ box-shadow:
   .fixed-line {
     display: none;
   }
+}
+
+/* FAQとReserveの境界 */
+.faq.section {
+  padding-bottom: 0;
+}
+
+.faq + .reserve {
+  margin-top: 0;
 }
