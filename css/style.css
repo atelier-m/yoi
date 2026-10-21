@@ -467,7 +467,7 @@ main {
 
 .hero {
   overflow: hidden;
-  background: var(--bg-main);
+  background: var(--bg-soft);
 }
 
 /* 画像 */
@@ -487,9 +487,11 @@ main {
 
   background: linear-gradient(
     to bottom,
-    rgba(247, 243, 238, 0) 68%,
-    rgba(247, 243, 238, 0.55) 86%,
-    var(--bg-main) 100%
+    rgba(241, 236, 230, 0) 60%,
+    rgba(241, 236, 230, 0.15) 72%,
+    rgba(241, 236, 230, 0.5) 85%,
+    rgba(241, 236, 230, 0.85) 94%,
+    var(--bg-soft) 100%
   );
 }
 
