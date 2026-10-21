@@ -855,8 +855,9 @@ main {
 /* スマホ */
 @media (max-width: 767px) {
   .menu::before {
-    top: 10px;
-    width: 150px;
+  top: 10px;
+  left: -20px;
+  width: 150px;
   }
 
   .menu::after {
