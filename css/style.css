@@ -2369,6 +2369,24 @@ box-shadow:
     height: 340px;
   }
 
+.menu > .container {
+  position: relative;
+  z-index: 1;
+}
+
+  @media (max-width: 767px) {
+
+.menu::before,
+.menu::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+}
+
 /* profile */
   .profile__inner {
     display: flex;
