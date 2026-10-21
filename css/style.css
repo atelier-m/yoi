@@ -902,6 +902,81 @@ main {
 }
 
 /* =========================
+  Area
+========================= */
+
+.area {
+  text-align: center;
+}
+
+.area__content {
+  margin-top: 28px;
+}
+
+.area__text {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+}
+
+.area__sub {
+  margin-top: 18px;
+
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  color: var(--text-soft);
+}
+
+.area__notes {
+  width: fit-content;
+  margin: 26px auto 0;
+  padding: 18px 24px;
+
+  text-align: left;
+  border-top: 1px solid rgba(28, 47, 74, 0.12);
+  border-bottom: 1px solid rgba(28, 47, 74, 0.12);
+}
+
+.area__notes li {
+  margin-top: 8px;
+
+  font-size: 13px;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  color: rgba(28, 47, 74, 0.6);
+}
+
+.area__notes li:first-child {
+  margin-top: 0;
+}
+
+.area__link-wrap {
+  margin-top: 32px;
+}
+
+.area__detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.area__detail-link::after {
+  content: "→";
+  transition: transform 0.3s ease;
+}
+
+.area__detail-link:hover::after {
+  transform: translateX(4px);
+}
+
+/* =========================
   Strength
 ========================= */
 
@@ -1530,82 +1605,6 @@ box-shadow:
     var(--bg-soft) 0%,
   rgba(247,243,238,0) 100%
 );
-}
-
-
-/* =========================
-  Area
-========================= */
-
-.area {
-  text-align: center;
-}
-
-.area__content {
-  margin-top: 28px;
-}
-
-.area__text {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.08em;
-  color: var(--navy);
-}
-
-.area__sub {
-  margin-top: 18px;
-
-  font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.05em;
-  color: var(--text-soft);
-}
-
-.area__notes {
-  width: fit-content;
-  margin: 26px auto 0;
-  padding: 18px 24px;
-
-  text-align: left;
-  border-top: 1px solid rgba(28, 47, 74, 0.12);
-  border-bottom: 1px solid rgba(28, 47, 74, 0.12);
-}
-
-.area__notes li {
-  margin-top: 8px;
-
-  font-size: 13px;
-  line-height: 1.9;
-  letter-spacing: 0.04em;
-  color: rgba(28, 47, 74, 0.6);
-}
-
-.area__notes li:first-child {
-  margin-top: 0;
-}
-
-.area__link-wrap {
-  margin-top: 32px;
-}
-
-.area__detail-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  color: var(--navy);
-  text-decoration: none;
-}
-
-.area__detail-link::after {
-  content: "→";
-  transition: transform 0.3s ease;
-}
-
-.area__detail-link:hover::after {
-  transform: translateX(4px);
 }
 
 /* =========================
