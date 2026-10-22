@@ -1156,7 +1156,7 @@ box-shadow:
   margin-top: 16px;
   font-size: 14px;
   letter-spacing: 0.08em;
-  color: var(--silver-deep);
+  color: var(--text-soft);
   line-height: 1.9;
 }
 
@@ -1213,7 +1213,7 @@ box-shadow:
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.08em;
-  color: var(--silver-deep);
+  color: var(--text-soft);
 }
 
 .style.section {
