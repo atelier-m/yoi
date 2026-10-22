@@ -991,71 +991,23 @@ main {
 }
 
 /* =========================
-  Area - Smartphone
-========================= */
-
-@media (max-width: 767px) {
-
-  .area__intro {
-    font-size: 15px;
-  }
-
-  .area__regions {
-    margin-top: 34px;
-  }
-
-  .area__region-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .area__region-list li {
-    padding: 16px 8px;
-    font-size: 15px;
-  }
-
-  .area__region-list li:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc((100% - 10px) / 2);
-  }
-
-  .area__info {
-    margin-top: 34px;
-  }
-
-  .area__fee span {
-    font-size: 18px;
-  }
-
-  .area__notes {
-    padding-left: 18px;
-  }
-
-  .area__notes li {
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-}
-
-/* =========================
   Strength
 ========================= */
 
 .strength__list {
   max-width: 900px;
-  margin: 52px auto 0;
+  margin: 32px auto 0;
   border-top: 1px solid var(--line);
 }
 
+
 .strength__item {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
+  grid-template-columns: 100px minmax(0, 1fr) 110px;
   column-gap: 24px;
-  align-items: start;
+  align-items: center;
 
-  padding: 34px 12px;
+  padding: 30px 12px;
   border-bottom: 1px solid var(--line);
 
   opacity: 0;
@@ -1089,13 +1041,15 @@ main {
 }
 
 /* 番号 */
+
 .strength__number {
   font-family: var(--font-serif);
-  font-size: 26px;
+  font-size: 46px;
   font-weight: 400;
-  line-height: 1.4;
-  letter-spacing: 0.05em;
+  line-height: 1;
+  letter-spacing: 0.02em;
   color: var(--silver-deep);
+  opacity: 0.45;
 }
 
 /* 文章 */
@@ -1122,6 +1076,18 @@ main {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--text-soft);
+}
+
+/* 英語キーワード */
+.strength__en {
+  justify-self: end;
+
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.12em;
+  color: var(--silver-deep);
+  opacity: 0.65;
 }
 
 /* =========================
@@ -2521,33 +2487,43 @@ box-shadow:
     font-size: 19px;
   }
 
-/* profile */
-  .profile__inner {
-    display: flex;
-    align-items: center;
-    gap: 48px;
-    max-width: 720px;
-    margin-inline: auto;
-  }
 
-  .profile__img {
-    flex-shrink: 0;
-    max-width: 220px;
-  }
+/* Profile - PC / Tablet */
 
-  .profile__text {
-    margin-top: 0;
-    text-align: left;
-  }
+.profile__inner {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  max-width: 720px;
+  margin: 40px auto 0;
+}
 
-  .profile__text p {
-    margin-inline: 0;
-  }
+.profile__img {
+  flex: 0 0 240px;
+  max-width: 240px;
+  margin: 0;
+}
+
+.profile__text {
+  flex: 1;
+  min-width: 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+.profile__text p {
+  max-width: none;
+  margin-inline: 0;
+}
+
+.profile__text p + p {
+  margin-top: 14px;
+}
+
 
   /* common widths */
   .menu__list,
   .strength__list,
-  .profile__inner,
   .style__gallery {
     max-width: 760px;
     margin-inline: auto;
@@ -2708,32 +2684,6 @@ box-shadow:
 .footer__links{
   gap: 36px;
 }
- 
-/* Strength - Smartphone */
-
-.strength__list {
-  margin-top: 36px;
-}
-
-.strength__item {
-  grid-template-columns: 38px minmax(0, 1fr);
-  column-gap: 14px;
-  padding: 26px 0;
-}
-
-.strength__number {
-  font-size: 19px;
-}
-
-.strength__title {
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.strength__text {
-  font-size: 13px;
-  line-height: 1.9;
-}
 
 /*  Voice */
   .voice__lead {
@@ -2860,6 +2810,84 @@ box-shadow:
   .fixed-line {
     display: none;
   }
+}
+
+/* =========================
+  Area Strength - Smartphone
+========================= */
+
+@media (max-width: 767px) {
+
+  .area__intro {
+    font-size: 15px;
+  }
+
+  .area__regions {
+    margin-top: 34px;
+  }
+
+  .area__region-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .area__region-list li {
+    padding: 16px 8px;
+    font-size: 15px;
+  }
+
+  .area__region-list li:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc((100% - 10px) / 2);
+  }
+
+  .area__info {
+    margin-top: 34px;
+  }
+
+  .area__fee span {
+    font-size: 18px;
+  }
+
+  .area__notes {
+    padding-left: 18px;
+  }
+
+  .area__notes li {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+
+/* Strength - Smartphone */
+
+.strength__item {
+  grid-template-columns: 42px minmax(0, 1fr);
+  column-gap: 14px;
+  padding: 28px 0;
+}
+
+.strength__number {
+  font-size: 25px;
+}
+
+.strength__inner {
+  min-width: 0;
+}
+
+.strength__title {
+  font-size: 16px;
+}
+
+.strength__text {
+  font-size: 13px;
+}
+
+.strength__en {
+  display: none;
+}
+
 }
 
 /* FAQとReserveの境界 */
