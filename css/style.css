@@ -1235,26 +1235,46 @@ box-shadow:
   right: 20px;
 }
 
-
 /* =========================
   Flow
 ========================= */
 
-.flow__list {
-  max-width: 650px; /* 760px → 650px */
+.flow {
+  position: relative;
+  background-image: url("images/flow-shadow.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 48% auto;
+}
+
+.flow__layout {
+  max-width: 1200px;
   margin: 48px auto 0;
+  position: relative;
+}
+
+.flow__main {
+  position: relative;
+  z-index: 1;
+  width: 58%;
+  min-width: 0;
+}
+
+/* ステップ一覧 */
+.flow__list {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
+/* 各ステップ */
 .flow__item {
   position: relative;
   display: grid;
   grid-template-columns: 56px minmax(0, 1fr);
-  column-gap: 28px;
+  column-gap: 24px;
   align-items: start;
-  padding-bottom: 36px; /* 48px → 36px */
+  padding-bottom: 36px;
 }
 
 .flow__item:last-child {
@@ -1265,7 +1285,6 @@ box-shadow:
 .flow__num {
   position: relative;
   z-index: 1;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1281,7 +1300,7 @@ box-shadow:
   color: var(--navy);
 }
 
-/* ステップをつなぐ縦ライン */
+/* 番号をつなぐ縦ライン */
 .flow__item:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -1292,8 +1311,9 @@ box-shadow:
   background: rgba(28, 47, 74, 0.16);
 }
 
-/* 文章 */
+/* テキスト */
 .flow__content {
+  min-width: 0;
   padding-top: 6px;
   text-align: left;
 }
@@ -1319,7 +1339,7 @@ box-shadow:
 /* LINEへの導線 */
 .flow__cta {
   max-width: 520px;
-  margin: 52px auto 0;
+  margin: 40px auto 0;
   text-align: center;
 }
 
@@ -1330,32 +1350,10 @@ box-shadow:
   color: var(--text-soft);
 }
 
-/* =========================
-  Flow - Split Layout
-========================= */
-
-.flow__layout {
-  max-width: 1200px;
-  margin: 48px auto 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.flow__main {
-  min-width: 0;
-}
-
-.flow__list {
-  margin-top: 0;
-}
-
+/* 右側：装飾画像 */
 .flow__visual {
   height: 680px;
   overflow: hidden;
-  border-radius: 2px;
-  background: var(--navy);
 }
 
 .flow__visual img {
@@ -1364,10 +1362,6 @@ box-shadow:
   height: 100%;
   object-fit: cover;
   object-position: center;
-}
-
-.flow__cta {
-  margin-top: 40px;
 }
 
 /* =========================
@@ -2893,56 +2887,19 @@ box-shadow:
 
 /* Flow */
 
-  .flow__list {
+.flow {
+    background-size: 85% auto;
+    background-position: right bottom;
+  }
+
+  .flow__layout {
     margin-top: 36px;
   }
 
-  .flow__item {
-    grid-template-columns: 44px minmax(0, 1fr);
-    column-gap: 18px;
-    padding-bottom: 38px;
+  .flow__main {
+    width: 100%;
   }
 
-  .flow__num {
-    width: 44px;
-    height: 44px;
-    font-size: 14px;
-  }
-
-  .flow__item:not(:last-child)::after {
-    top: 44px;
-    left: 21px;
-  }
-
-  .flow__content {
-    padding-top: 2px;
-  }
-
-  .flow__content h3 {
-    font-size: 16px;
-  }
-
-  .flow__content p {
-    font-size: 13px;
-    line-height: 1.9;
-  }
-
-  .flow__cta {
-    margin-top: 44px;
-  }
-  .flow__layout {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-
-  .flow__visual {
-    height: 280px;
-  }
-
-  .flow__visual img {
-    object-position: center 55%;
-  }
-  
 
 }
 
