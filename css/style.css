@@ -1241,10 +1241,10 @@ box-shadow:
 
 .flow {
   position: relative;
-  background-image: url("images/flow-shadow.png");
+  background-image: url("../images/flow-shadow.png");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 48% auto;
+  background-position: right 80px;
+  background-size: 42% auto;
 }
 
 .flow__layout {
@@ -1348,20 +1348,6 @@ box-shadow:
   font-size: 14px;
   line-height: 2;
   color: var(--text-soft);
-}
-
-/* 右側：装飾画像 */
-.flow__visual {
-  height: 680px;
-  overflow: hidden;
-}
-
-.flow__visual img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
 /* =========================
