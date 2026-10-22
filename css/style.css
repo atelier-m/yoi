@@ -641,45 +641,6 @@ main {
 }
 
 /* =========================
-  Concept - Smartphone
-========================= */
-
-@media (max-width: 767px) {
-
-  .concept .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* 文章を先に表示 */
-  .concept__content {
-    order: 1;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* 写真を文章の下に表示 */
-  .concept__visual {
-    order: 2;
-    width: 100%;
-    margin: 40px auto 0;
-  }
-
-  .concept__img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-  }
-
-  .concept__heading .section__label,
-  .concept__heading .section__title {
-    text-align: center;
-  }
-
-}
-
-/* =========================
   Service
 ========================= */
 .service {
@@ -851,21 +812,6 @@ main {
   background-image: url("../images/menu-sakura-bottom.png");
   background-position: bottom right;
 }
-
-/* スマホ */
-@media (max-width: 767px) {
-  .menu::before {
-  top: 10px;
-  left: -20px;
-  width: 150px;
-  }
-
-  .menu::after {
-    bottom: 10px;
-    width: 130px;
-  }
-}
-
 
 /* =========================
   Area
@@ -1289,76 +1235,91 @@ box-shadow:
   right: 20px;
 }
 
+
 /* =========================
   Flow
 ========================= */
 
 .flow__list {
-  margin-top: 48px;
+  max-width: 650px; /* 760px → 650px */
+  margin: 48px auto 0;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 0;
 }
 
 .flow__item {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  column-gap: 28px;
+  align-items: start;
+  padding-bottom: 36px; /* 48px → 36px */
+}
+
+.flow__item:last-child {
+  padding-bottom: 0;
 }
 
 /* 番号 */
 .flow__num {
-  width: 48px;
-  height: 48px;
-  border: 1px solid #d4c9be;
-  border-radius: 50%;
-  background: #fff;
+  position: relative;
+  z-index: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-family: var(--font-serif);
-  font-size: 14px;
-  color: var(--navy);
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(28, 47, 74, 0.2);
+  border-radius: 50%;
+  background: var(--bg-main);
 
-  flex-shrink: 0;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  color: var(--navy);
 }
 
-/* テキスト */
+/* ステップをつなぐ縦ライン */
+.flow__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 56px;
+  bottom: 0;
+  left: 27px;
+  width: 1px;
+  background: rgba(28, 47, 74, 0.16);
+}
+
+/* 文章 */
+.flow__content {
+  padding-top: 6px;
+  text-align: left;
+}
+
 .flow__content h3 {
-  margin: 0 0 8px;
-  font-size: 16px;
+  margin: 0 0 10px;
   font-family: var(--font-serif);
+  font-size: 19px;
   font-weight: 500;
+  line-height: 1.6;
   color: var(--navy);
 }
 
 .flow__content p {
   margin: 0;
-  font-size: 14px;
   font-family: var(--font-sans);
-  line-height: 1.9;
-  color: var(--silver-deep);
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
 }
 
-/* 縦ライン（繋ぎ） */
-.flow__item:not(:last-child) {
-  position: relative;
-}
-
-.flow__item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  left: 24px;
-  top: 56px;
-  width: 1px;
-  height: calc(100% - 40px);
-  background: #e5ddd3;
-}
-
+/* LINEへの導線 */
 .flow__cta {
-  margin: 48px auto 0;
   max-width: 520px;
+  margin: 52px auto 0;
   text-align: center;
 }
 
@@ -1367,6 +1328,46 @@ box-shadow:
   font-size: 14px;
   line-height: 2;
   color: var(--text-soft);
+}
+
+/* =========================
+  Flow - Split Layout
+========================= */
+
+.flow__layout {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.flow__main {
+  min-width: 0;
+}
+
+.flow__list {
+  margin-top: 0;
+}
+
+.flow__visual {
+  height: 680px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--navy);
+}
+
+.flow__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flow__cta {
+  margin-top: 40px;
 }
 
 /* =========================
@@ -2561,53 +2562,6 @@ box-shadow:
 .style__img--left:hover {
   transform: scale(1.03) translateY(-4px);
 }
-  /* flow */
-  .flow__list {
-    max-width: 1040px;
-    margin-inline: auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-  }
-
-  .flow__item {
-  display: block;
-  text-align: center;
-  padding: 28px 20px;
-
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-
-  background: rgba(255, 250, 245, 0.65);
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.flow__item:hover {
-  transform: translateY(-4px);
-
-  border-color: rgba(28, 47, 74, 0.12);
-
-  box-shadow:
-    0 18px 40px rgba(28, 47, 74, 0.05);
-}
-
-  .flow__num {
-    margin: 0 auto 18px;
-  }
-
-  .flow__item::after {
-    display: none;
-  }
-
-  .flow__content h3,
-  .flow__content p {
-    text-align: center;
-  }
 
   /* faq */
   .faq__list {
@@ -2813,10 +2767,58 @@ box-shadow:
 }
 
 /* =========================
-  Area Strength - Smartphone
+  - Smartphone -
 ========================= */
 
 @media (max-width: 767px) {
+
+  /* concept */
+
+  .concept .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 文章を先に表示 */
+  .concept__content {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 写真を文章の下に表示 */
+  .concept__visual {
+    order: 2;
+    width: 100%;
+    margin: 40px auto 0;
+  }
+
+  .concept__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .concept__heading .section__label,
+  .concept__heading .section__title {
+    text-align: center;
+  }
+
+  /* menu */
+
+  .menu::before {
+  top: 10px;
+  left: -20px;
+  width: 150px;
+  }
+
+  .menu::after {
+    bottom: 10px;
+    width: 130px;
+  }
+
+  /* area */
 
   .area__intro {
     font-size: 15px;
@@ -2860,7 +2862,7 @@ box-shadow:
 }
 
 
-/* Strength - Smartphone */
+/* Strength */
 
 .strength__item {
   grid-template-columns: 42px minmax(0, 1fr);
@@ -2887,6 +2889,60 @@ box-shadow:
 .strength__en {
   display: none;
 }
+
+
+/* Flow */
+
+  .flow__list {
+    margin-top: 36px;
+  }
+
+  .flow__item {
+    grid-template-columns: 44px minmax(0, 1fr);
+    column-gap: 18px;
+    padding-bottom: 38px;
+  }
+
+  .flow__num {
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .flow__item:not(:last-child)::after {
+    top: 44px;
+    left: 21px;
+  }
+
+  .flow__content {
+    padding-top: 2px;
+  }
+
+  .flow__content h3 {
+    font-size: 16px;
+  }
+
+  .flow__content p {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .flow__cta {
+    margin-top: 44px;
+  }
+  .flow__layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .flow__visual {
+    height: 280px;
+  }
+
+  .flow__visual img {
+    object-position: center 55%;
+  }
+  
 
 }
 
