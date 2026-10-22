@@ -2873,9 +2873,9 @@ box-shadow:
 
 /* Flow */
 
-.flow {
-    background-size: 85% auto;
-    background-position: right bottom;
+  .flow {
+    background-size: 55% auto;
+    background-position: right bottom -60px;
   }
 
   .flow__layout {
