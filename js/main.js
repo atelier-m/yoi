@@ -14,7 +14,7 @@ menu.querySelectorAll("a").forEach(link => {
   });
 });
 
-//Strengthホバー
+// Strength スクロール表示
 const strengthItems = document.querySelectorAll('.strength__item');
 
 const observer = new IntersectionObserver((entries) => {
