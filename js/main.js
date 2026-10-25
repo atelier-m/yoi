@@ -1,6 +1,6 @@
 // ハンバーガーメニュー
 const toggle = document.getElementById("menuToggle");
-const menu = document.getElementById("menu");
+const menu = document.getElementById("headernav");
 
 toggle.addEventListener("click", () => {
   toggle.classList.toggle("active");
