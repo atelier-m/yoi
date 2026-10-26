@@ -1,0 +1,100 @@
+
+/* =========================
+  Legal Pages
+  Privacy Policy / Law
+========================= */
+
+.policy-page {
+  background: var(--bg-main);
+  padding: 100px 0 120px;
+}
+
+.policy-page .container {
+  max-width: 900px;
+}
+
+/* ページタイトル */
+.policy-page .section__title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+/* 本文全体 */
+.policy__content {
+  padding: 48px 56px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(28, 47, 74, 0.08);
+  border-radius: 12px;
+}
+
+/* 項目見出し */
+.policy__content h2 {
+  margin: 36px 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(28, 47, 74, 0.12);
+
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: var(--navy);
+}
+
+/* 最初の見出し */
+.policy__content h2:first-child {
+  margin-top: 0;
+}
+
+/* 本文 */
+.policy__content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.2;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+}
+
+/* プライバシーポリシーの冒頭文 */
+.policy__content > p:first-child {
+  margin-bottom: 40px;
+}
+
+/* =========================
+  Smartphone
+========================= */
+
+@media (max-width: 767px) {
+
+  .policy-page {
+    padding: 72px 0 88px;
+  }
+
+  .policy-page .section__title {
+    margin-bottom: 40px;
+  }
+
+  .policy__content {
+    padding: 32px 24px;
+    border-radius: 8px;
+  }
+
+  .policy__content h2 {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+
+  .policy__content p {
+    font-size: 13px;
+    line-height: 2;
+  }
+
+  .policy__content > p:first-child {
+    margin-bottom: 32px;
+  }
+}
+
+/* 法律ページのみフッターのグラデーションを非表示 */
+body:has(.policy-page) .footer::before {
+  display: none;
+}

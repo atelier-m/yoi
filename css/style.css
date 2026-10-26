@@ -2914,11 +2914,17 @@ box-shadow:
 
 }
 
-/* FAQとReserveの境界 */
-.faq.section {
-  padding-bottom: 0;
+
+/* =========================
+  Legal Pages / Gradient OFF
+========================= */
+
+/* 法律ページの背景グラデーションを解除 */
+.subpage-main {
+  background: var(--bg-main);
 }
 
-.faq + .reserve {
-  margin-top: 0;
+/* フッター上部のグラデーションを解除 */
+body:has(.policy-page) .footer::before {
+  display: none;
 }
