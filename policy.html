@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo.png">
+
+
   <title>美宵 - YOI -｜京都の出張着付け</title>
   <meta name="description" content="京都市内を中心に出張着付けを承ります。お宮参り・七五三・入学式・卒業式・結婚式参列など、大切な一日を整った美しさで。">
 
@@ -13,6 +17,7 @@
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
   <!-- Header -->
@@ -35,7 +40,7 @@
 
     <nav class="header__nav" id="headernav">
       <a href="index.html#service">Service</a>
-<a href="index.html#menu">menu</a>
+<a href="index.html#menu">Menu</a>
 <a href="index.html#style">Style</a>
 <a href="index.html#flow">Flow</a>
 <a href="index.html#faq">FAQ</a>
@@ -46,7 +51,7 @@
           LINEで予約する
         </a>
 
-        <a href="#" class="header__sns-link">
+        <a href="https://www.instagram.com/yoi.kimono/" class="header__sns-link">
           <img src="images/instagram.svg" alt="Instagram">
         </a>
       </div>
@@ -154,12 +159,15 @@
 </a>
 
 <div class="lightbox" id="lightbox">
-  <button class="lightbox__close" id="lightboxClose">×</button>
-  <button class="lightbox__prev" id="lightboxPrev">‹</button>
+  <button class="lightbox__close" id="lightboxClose"
+        type="button" aria-label="画像を閉じる">×</button>
+
+  <button class="lightbox__prev" id="lightboxPrev"
+        type="button" aria-label="前の画像へ">‹</button>
 
   <img alt="" class="lightbox__img" id="lightboxImg">
 
-  <button class="lightbox__next" id="lightboxNext">›</button>
+  <button class="lightbox__next" id="lightboxNext" type="button" aria-label="次の画像へ">›</button>
 </div>
 
  <script src="js/main.js"></script>
