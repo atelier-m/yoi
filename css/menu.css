@@ -1,0 +1,8 @@
+/* =========================
+  Menu Pages / Gradient OFF
+========================= */
+
+/* メニュー ページの背景グラデーションを解除 */
+.subpage-main {
+  background: var(--bg-main);
+}
