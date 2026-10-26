@@ -144,7 +144,10 @@ if (voiceTrack && voiceCards.length && voiceDots.length) {
    Fixed LINE / Reserve
 ========================= */
 
-const reserveSection = document.querySelector("#reserve");
+const reserveSection = document.querySelector(
+  "#reserve, .menu-cta"
+);
+
 const fixedLineButton = document.querySelector(".fixed-line");
 
 if (reserveSection && fixedLineButton) {
