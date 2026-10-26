@@ -1145,21 +1145,26 @@ box-shadow:
   background-size: contain;
   pointer-events: none;
   opacity: 0.4;
-  z-index: -1;
+  z-index: 0;
 }
 
 /* 左上 */
 .style::before {
-  top: 60px;
-  left: 0;
-  background-image: url("images/style-line01.png");
+  top: 80px;
+  left: 8%;
+  background-image: url("../images/style-line01.png");
 }
 
 /* 右下 */
 .style::after {
-  right: 0;
-  bottom: 35px;
-  background-image: url("images/style-line02.png");
+  right: 8%;
+  bottom: 55px;
+  background-image: url("../images/style-line02.png");
+}
+
+.style > .container {
+  position: relative;
+  z-index: 1;
 }
 
 .style__lead {
@@ -1422,6 +1427,30 @@ box-shadow:
   overflow: hidden;
 }
 
+/* Voice 装飾ライン */
+.voice__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 24px 0;
+}
+
+.voice__divider::before,
+.voice__divider::after {
+  content: "";
+  width: 56px;
+  height: 1px;
+  background: rgba(194, 170, 120, 0.55);
+}
+
+.voice__divider span {
+  font-size: 13px;
+  color: rgba(194, 170, 120, 0.75);
+  line-height: 1;
+}
+
 .voice__lead {
   margin-top: 22px;
 
@@ -1465,15 +1494,15 @@ box-shadow:
 
   text-align: center;
 
-  border: 1px solid rgba(28, 47, 74, 0.06);
+  border: 1px solid rgba(155, 165, 180, 0.16);
   border-radius: 18px;
   background: #f8f4f0;
 
   box-shadow:
-    0 18px 45px rgba(28, 47, 74, 0.035),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  0 18px 45px rgba(28, 47, 74, 0.045),
+  inset 0 1px 0 rgba(255, 255, 255, 0.7);
 
-  opacity: 0.45;
+  opacity: 0.65;
   transform: scale(0.82);
 
   transition:
@@ -1492,9 +1521,9 @@ box-shadow:
   transform: scale(1);
 
   box-shadow:
-    0 24px 60px rgba(28, 47, 74, 0.065),
-    0 6px 18px rgba(28, 47, 74, 0.025),
-    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  0 26px 65px rgba(28, 47, 74, 0.085),
+  0 6px 20px rgba(28, 47, 74, 0.035),
+  inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 .voice-card__quote {
@@ -1660,6 +1689,10 @@ box-shadow:
     var(--bg-soft) 0%,
   rgba(247,243,238,0) 100%
 );
+}
+
+.sp-only {
+  display: none;
 }
 
 /* =========================
@@ -2654,6 +2687,22 @@ box-shadow:
   display: none;
 }
 
+/* Style 装飾 */
+.style::before,
+.style::after {
+  width: 125px;
+  opacity: 0.3;
+}
+
+.style::before {
+  top: 30px;
+  left: 15px;
+}
+
+.style::after {
+  right: 15px;
+  bottom: 25px;
+}
 
 /* Flow */
 
@@ -2669,6 +2718,12 @@ box-shadow:
   .flow__main {
     width: 100%;
   }
+
+  /* Voice */
+.voice .section__title {
+  font-size: 22px;
+  letter-spacing: 0.02em;
+}
 
   /* Reserve */
 .reserve__title {
@@ -2687,5 +2742,8 @@ box-shadow:
     text-align: left;
   }
 
+  .sp-only {
+  display: inline;
+}
 
 }
