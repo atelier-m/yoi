@@ -2899,6 +2899,18 @@ box-shadow:
   font-size: 24px;
 }
 
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 18px 44px;
+    margin-bottom: 24px;
+  }
+
+  .footer__nav a {
+    text-align: left;
+  }
+
 
 }
 
