@@ -39,11 +39,19 @@ const lightboxNext = document.getElementById("lightboxNext");
 
 let currentIndex = 0;
 
-const imageList = Array.from(lightboxImages).map((img) => img.src);
+const imageList = Array.from(lightboxImages).map((img) => ({
+  src: img.src,
+  alt: img.alt
+}));
+
+function updateLightboxImage() {
+  lightboxImg.src = imageList[currentIndex].src;
+  lightboxImg.alt = imageList[currentIndex].alt;
+}
 
 function openLightbox(index) {
   currentIndex = index;
-  lightboxImg.src = imageList[currentIndex];
+  updateLightboxImage();
   lightbox.classList.add("is-open");
 }
 
@@ -53,12 +61,12 @@ function closeLightbox() {
 
 function showPrev() {
   currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
-  lightboxImg.src = imageList[currentIndex];
+  updateLightboxImage();
 }
 
 function showNext() {
   currentIndex = (currentIndex + 1) % imageList.length;
-  lightboxImg.src = imageList[currentIndex];
+  updateLightboxImage();
 }
 
 lightboxImages.forEach((img, index) => {
@@ -71,6 +79,12 @@ lightboxNext.addEventListener("click", showNext);
 
 lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && lightbox.classList.contains("is-open")) {
+    closeLightbox();
+  }
 });
 
 //Voice Slider
