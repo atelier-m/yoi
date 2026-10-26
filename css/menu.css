@@ -41,6 +41,10 @@
   color: var(--navy);
 }
 
+/* MENUページのヘッダー下余白を調整 */
+.subpage-main {
+  padding-top: 72px;
+}
 
 /* 料金一覧 */
 .menu-list {
@@ -301,11 +305,21 @@
 }
 
 /* =========================
-  Menu Page / Background
+  Menu Page / Gradient OFF
 ========================= */
 
 .subpage-main {
   background: var(--bg-main);
+}
+
+/* 通常セクション */
+.subpage-main .section {
+  background: var(--bg-main);
+}
+
+/* 交互背景セクション */
+.subpage-main .section--alt {
+  background: var(--bg-soft);
 }
 
 /* フッター上部のグラデーションを解除 */
