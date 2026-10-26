@@ -139,3 +139,26 @@ if (voiceTrack && voiceCards.length && voiceDots.length) {
 
   updateVoiceSlider();
 }
+
+/* =========================
+   Fixed LINE / Reserve
+========================= */
+
+const reserveSection = document.querySelector("#reserve");
+const fixedLineButton = document.querySelector(".fixed-line");
+
+if (reserveSection && fixedLineButton) {
+  const reserveObserver = new IntersectionObserver(
+    (entries) => {
+      fixedLineButton.classList.toggle(
+        "is-hidden",
+        entries[0].isIntersecting
+      );
+    },
+    {
+      threshold: 0
+    }
+  );
+
+  reserveObserver.observe(reserveSection);
+}

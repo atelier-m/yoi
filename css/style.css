@@ -1636,9 +1636,11 @@ box-shadow:
 }
 
 .reserve__buttons {
-  margin-top: 40px;
+  margin: 40px auto 0;
   display: grid;
   gap: 18px;
+  width: 100%;
+  max-width: 480px;
 }
 
 .reserve__btn {
@@ -1816,24 +1818,6 @@ box-shadow:
 }
 
 /* =========================
-  SNS
-========================= */
-
-.footer__sns {
-  margin-bottom: 20px;
-}
-
-.footer__sns a {
-  font-size: 13px;
-  color: var(--text-soft);
-}
-
-.footer__sns a:hover {
-  color: var(--navy);
-  letter-spacing: 0.05em;
-}
-
-/* =========================
   コピー
 ========================= */
 
@@ -1871,9 +1855,11 @@ box-shadow:
   box-shadow: 0 12px 30px rgba(28, 47, 74, 0.18);
 
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    background 0.3s ease;
+  transform 0.3s ease,
+  box-shadow 0.3s ease,
+  background 0.3s ease,
+  opacity 0.3s ease,
+  visibility 0.3s ease;
 }
 
 .fixed-line:hover {
@@ -1882,6 +1868,14 @@ box-shadow:
   background: rgba(28, 47, 74, 1);
 
   box-shadow: 0 18px 36px rgba(28, 47, 74, 0.24);
+}
+
+/* Reserve表示中は固定LINEボタンを非表示 */
+.fixed-line.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px);
 }
 
 /* =========================
@@ -2582,57 +2576,6 @@ box-shadow:
     height: 320px;
   }
 
-  /* footer */
- .footer__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 150px;
-
-  max-width: 760px;
-  margin-inline: auto;
-}
-
-  .footer__brand {
-    font-family: var(--font-serif);
-    text-align: left;
-     color: var(--navy);
-  }
-
-  .footer__nav {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-
-    gap: 18px 48px;
-
-    text-align: left;
-  }
-
-  .footer__nav a {
-  font-family: var(--font-serif);
-
-  font-size: 15px;
-  letter-spacing: 0.08em;
-
-  color: var(--navy);
-
-  opacity: 0.88;
-
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-}
-
-.footer__nav a:hover {
-  opacity: 1;
-  transform: translateX(2px);
-}
-
-.footer__links{
-  gap: 36px;
-}
-
 /*  Voice */
   .voice__lead {
     margin-top: 18px;
@@ -2753,6 +2696,57 @@ box-shadow:
   .guide-box p {
     font-size: 14px;
   }
+
+  /* footer */
+ .footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 150px;
+
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+  .footer__brand {
+    font-family: var(--font-serif);
+    text-align: left;
+     color: var(--navy);
+  }
+
+  .footer__nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+
+    gap: 18px 48px;
+
+    text-align: left;
+  }
+
+  .footer__nav a {
+  font-family: var(--font-serif);
+
+  font-size: 15px;
+  letter-spacing: 0.08em;
+
+  color: var(--navy);
+
+  opacity: 0.88;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer__nav a:hover {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+.footer__links{
+  gap: 36px;
+}
 
   /* fixed line */
   .fixed-line {
@@ -2899,6 +2893,11 @@ box-shadow:
   .flow__main {
     width: 100%;
   }
+
+  /* Reserve */
+.reserve__title {
+  font-size: 24px;
+}
 
 
 }
