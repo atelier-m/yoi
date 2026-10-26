@@ -1021,12 +1021,12 @@ main {
 
 .strength__number {
   font-family: var(--font-serif);
-  font-size: 46px;
+  font-size: 52px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.02em;
   color: var(--silver-deep);
-  opacity: 0.45;
+  opacity: 0.75;
 }
 
 /* 文章 */
@@ -1039,7 +1039,7 @@ main {
   margin: 0 0 10px;
 
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.06em;
@@ -1128,6 +1128,39 @@ box-shadow:
 /* =========================
   Style
 ========================= */
+
+/* Style 装飾 */
+.style {
+  position: relative;
+  isolation: isolate;
+}
+
+.style::before,
+.style::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* 左上 */
+.style::before {
+  top: 60px;
+  left: 0;
+  background-image: url("images/style-line01.png");
+}
+
+/* 右下 */
+.style::after {
+  right: 0;
+  bottom: 35px;
+  background-image: url("images/style-line02.png");
+}
 
 .style__lead {
   margin-top: 16px;
@@ -2530,6 +2563,12 @@ box-shadow:
   .concept__heading .section__title {
     text-align: center;
   }
+
+  /* service */
+
+  .service__image::before {
+  display: none;
+ }
 
   /* menu */
 
