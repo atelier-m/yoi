@@ -94,7 +94,17 @@
   }
 }
 
-/* 法律ページのみフッターのグラデーションを非表示 */
+
+/* =========================
+  Legal Pages / Gradient OFF
+========================= */
+
+/* 法律ページの背景グラデーションを解除 */
+.subpage-main {
+  background: var(--bg-main);
+}
+
+/* フッター上部のグラデーションを解除 */
 body:has(.policy-page) .footer::before {
   display: none;
 }
