@@ -849,8 +849,9 @@ main {
   color: var(--navy);
 }
 
-/* 京都御所の風景 */
+/* Area イメージ */
 .area__visual {
+  width: 100%;
   max-width: 780px;
   margin: 40px auto 0;
   overflow: hidden;
@@ -859,9 +860,9 @@ main {
 .area__visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 16 / 8;
   object-fit: cover;
-  object-position: center;
+  object-position: center 65%;
 }
 
 /* 対応地域 */
@@ -2421,6 +2422,10 @@ box-shadow:
     padding: 26px 30px;
   }
 
+  .area__regions {
+    margin-top: 60px;
+  }
+
   .guide-box {
     max-width: 720px;
     padding: 34px 40px;
@@ -2549,7 +2554,7 @@ box-shadow:
     margin-top: 34px;
 }
 
-  .area__region-list {
+.area__region-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
 }
@@ -2581,15 +2586,6 @@ box-shadow:
   font-size: 14px;
   line-height: 1.9;
 }
-
-.area__visual {
-  margin-top: 28px;
-}
-
-.area__visual img {
-  aspect-ratio: 4 / 3;
-}
-
 
 /* Strength */
 
