@@ -703,6 +703,21 @@ main {
   object-fit: cover;
 }
 
+/* Service 写真の装飾 */
+.service__image::before {
+  content: "";
+  position: absolute;
+  width: 204px;
+  height: 204px;
+  border: 1px solid rgba(150, 160, 175, 0.55);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-18deg);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 55% 75%, 55% 100%, 0 100%);
+  pointer-events: none;
+}
+
 /* =========================
   menu
 ========================= */
@@ -744,7 +759,7 @@ main {
 
   font-size: 14px;
   letter-spacing: 0.05em;
-  color: var(--silver-deep);
+  color: #536176;
 }
 
 .menu__value {
@@ -832,6 +847,21 @@ main {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--navy);
+}
+
+/* 京都御所の風景 */
+.area__visual {
+  max-width: 780px;
+  margin: 40px auto 0;
+  overflow: hidden;
+}
+
+.area__visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* 対応地域 */
@@ -2145,6 +2175,11 @@ box-shadow:
     height: 340px;
   }
 
+  .service__image::before {
+  width: 354px;
+  height: 354px;
+  }
+
 /*  menu */
   .menu-heading {
     margin-bottom: 44px;
@@ -2504,47 +2539,55 @@ box-shadow:
     width: 130px;
   }
 
-  /* area */
+/* area */
 
-  .area__intro {
+.area__intro {
     font-size: 15px;
-  }
+}
 
-  .area__regions {
+.area__regions {
     margin-top: 34px;
-  }
+}
 
   .area__region-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
-  }
+}
 
-  .area__region-list li {
+.area__region-list li {
     padding: 16px 8px;
     font-size: 15px;
-  }
+}
 
-  .area__region-list li:last-child {
+.area__region-list li:last-child {
     grid-column: 1 / -1;
     justify-self: center;
     width: calc((100% - 10px) / 2);
-  }
+}
 
-  .area__info {
+.area__info {
     margin-top: 34px;
-  }
+}
 
-  .area__fee span {
+.area__fee span {
     font-size: 18px;
-  }
+}
 
-  .area__notes {
+.area__notes {
     padding-left: 18px;
-  }
+}
 
-  .area__notes li {
+.area__notes li {
   font-size: 14px;
   line-height: 1.9;
+}
+
+.area__visual {
+  margin-top: 28px;
+}
+
+.area__visual img {
+  aspect-ratio: 4 / 3;
 }
 
 
