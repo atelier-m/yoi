@@ -190,7 +190,7 @@
 /* 着付けメニュー：写真付きレイアウト */
 .menu-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 280px;
+  grid-template-columns: minmax(0, 1fr) 350px;
   align-items: center;
   gap: 56px;
 
