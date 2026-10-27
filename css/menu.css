@@ -477,10 +477,55 @@
   border-top: 1px solid var(--line);
 }
 
+/* =========================
+   Menu Contact
+========================= */
 
-/* CTA */
-.menu-cta {
+/* Contact専用の背景色 */
+.menu-cta.section--alt {
   text-align: center;
+}
+
+.menu-cta .section__label {
+  color: rgba(194, 170, 120, 0.75);
+}
+
+.menu-cta .section__title {
+  color: #fff;
+}
+
+.menu-cta .section__text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Heroと共通の装飾 */
+.menu-cta__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 28px 0 22px;
+}
+
+.menu-cta__divider::before,
+.menu-cta__divider::after {
+  content: "";
+  width: 56px;
+  height: 1px;
+  background: rgba(194, 170, 120, 0.55);
+}
+
+.menu-cta__divider span {
+  font-size: 13px;
+  color: rgba(194, 170, 120, 0.75);
+  line-height: 1;
+}
+
+/* LINEボタン */
+.menu-cta .btn--primary {
+  background: #fff;
+  color: var(--navy);
 }
 
 .menu-cta__button {
@@ -550,7 +595,7 @@
   background: var(--bg-soft);
 }
 
-/* フッター上部のグラデーションを解除 */
-body:has(.menu-cta) .footer::before {
-  display: none;
+/* メニューページのContactだけネイビー */
+.subpage-main .menu-cta.section--alt {
+  background: var(--navy);
 }
