@@ -4,7 +4,14 @@
 
 /* ページ導入 */
 .menu-hero {
+  position: relative;
+  overflow: hidden;
   text-align: center;
+}
+
+.menu-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .menu-hero .section__text {
@@ -12,6 +19,32 @@
   margin-inline: auto;
 }
 
+/* 桜の装飾 */
+.menu-hero::before,
+.menu-hero::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  aspect-ratio: 1;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+/* 左上 */
+.menu-hero::before {
+  top: 10px;
+  left: 20px;
+  background-image: url("../images/menu_sakura_top_left.png");
+}
+
+/* 右下 */
+.menu-hero::after {
+  right: 20px;
+  bottom: 10px;
+  background-image: url("../images/menu_sakura_bottom_right.png");
+}
 
 /* 見出し共通 */
 .menu-heading {
@@ -154,7 +187,49 @@
   color: var(--navy) !important;
 }
 
+/* 着付けメニュー：写真付きレイアウト */
+.menu-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  align-items: center;
+  gap: 56px;
 
+  max-width: 1040px;
+  margin-inline: auto;
+}
+
+.menu-layout__content {
+  min-width: 0;
+}
+
+.menu-layout__image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.menu-layout__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 子供：写真を左側に */
+.menu-layout--children {
+  grid-template-columns: 280px minmax(0, 1fr);
+}
+
+.menu-layout--children .menu-layout__image {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.menu-layout--children .menu-layout__content {
+  grid-column: 2;
+  grid-row: 1;
+}
 
 /* =========================
   出張対応エリア・出張費
@@ -273,6 +348,21 @@
 
 /* スマホ */
 @media (max-width: 767px) {
+  .menu-hero::before,
+  .menu-hero::after {
+    width: 180px;
+  }
+
+  .menu-hero::before {
+    top: -30px;
+    left: -90px;
+  }
+
+  .menu-hero::after {
+    right: -90px;
+    bottom: -50px;
+  }
+
   .area-detail__list li {
     padding: 17px 8px;
     font-size: 14px;
@@ -356,6 +446,29 @@
     padding-right: 22px;
 
     background: rgba(255, 250, 245, 0.65);
+  }
+
+  .menu-layout,
+  .menu-layout--children {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .menu-layout__content {
+    display: contents;
+  }
+
+  .menu-layout__image,
+  .menu-layout--children .menu-layout__image {
+    order: -1;
+    width: min(100%, 280px);
+    aspect-ratio: 3 / 4;
+    margin-inline: auto;
+  }
+
+  .menu-list {
+    width: 100%;
   }
 
   .usage-item,
