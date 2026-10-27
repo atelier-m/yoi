@@ -599,3 +599,8 @@
 .subpage-main .menu-cta.section--alt {
   background: var(--navy);
 }
+
+/* フッター上部のグラデーションを解除 */
+body:has(.menu-cta) .footer::before {
+  display: none;
+}
