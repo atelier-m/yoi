@@ -617,7 +617,6 @@ main {
   margin: 0 auto;
 }
 
-/* For Youから引き継いだ言葉 */
 .concept__lead {
   margin: 0 0 28px;
   font-family: var(--font-serif);
@@ -732,6 +731,11 @@ main {
   font-size: 12px;
   line-height: 1.8;
   color: var(--silver-deep);
+}
+
+/* スマホ専用の改行 */
+.menu__br-sp {
+  display: none;
 }
 
 .menu__list {
@@ -2571,6 +2575,22 @@ box-shadow:
 
   /* concept */
 
+.concept__lead br {
+  display: none;
+}
+
+.concept__lead {
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  line-height: 1.9;
+}
+
+.concept__text {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 2;
+}
+
   .concept .container {
     display: flex;
     flex-direction: column;
@@ -2609,6 +2629,10 @@ box-shadow:
  }
 
   /* menu */
+
+  .menu__br-sp {
+  display: inline;
+}
 
   .menu::before {
   top: 10px;
