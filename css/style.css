@@ -422,7 +422,7 @@ background: linear-gradient(
 }
 
 /* Instagramボタン */
-.header__sns-link {
+.header__nav .header__sns-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -432,9 +432,8 @@ background: linear-gradient(
   min-height: 54px;
 
   border-radius: 999px;
-
   background: var(--navy);
-  color: #fff !important;
+  color: #fff;
 
   font-family: var(--font-serif);
   font-size: 13px;
