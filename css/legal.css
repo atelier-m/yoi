@@ -92,6 +92,18 @@
   .policy__content > p:first-child {
     margin-bottom: 32px;
   }
+
+  /* =========================
+  ナビ表示中は固定LINEを非表示
+========================= */
+
+body:has(#headernav.is-open) .fixed-line {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(12px);
+}
+
 }
 
 
