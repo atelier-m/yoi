@@ -151,12 +151,23 @@ const reserveSection = document.querySelector(
 const fixedLineButton = document.querySelector(".fixed-line");
 
 if (reserveSection && fixedLineButton) {
+  let isReserveVisible = false;
+
+  // 固定ボタンの表示状態を更新
+  function updateFixedLine() {
+    const hasScrolled = window.scrollY > 200;
+
+    fixedLineButton.classList.toggle(
+      "is-hidden",
+      !hasScrolled || isReserveVisible
+    );
+  }
+
+  // Reserve / Contactに入ったら非表示
   const reserveObserver = new IntersectionObserver(
     (entries) => {
-      fixedLineButton.classList.toggle(
-        "is-hidden",
-        entries[0].isIntersecting
-      );
+      isReserveVisible = entries[0].isIntersecting;
+      updateFixedLine();
     },
     {
       threshold: 0
@@ -164,4 +175,12 @@ if (reserveSection && fixedLineButton) {
   );
 
   reserveObserver.observe(reserveSection);
+
+  // スクロール位置を監視
+  window.addEventListener("scroll", updateFixedLine, {
+    passive: true
+  });
+
+  // ページ読み込み時にも判定
+  updateFixedLine();
 }
