@@ -442,13 +442,6 @@ background: linear-gradient(
   box-shadow: 0 10px 24px rgba(28, 47, 74, 0.12);
 }
 
-.header__sns-link img {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
 .header__cta {
   display: none;
 }
