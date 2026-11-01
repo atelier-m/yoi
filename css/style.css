@@ -11,7 +11,7 @@
   --navy-soft: #314966;
 
   --silver: #c7ccd4;
-  --silver-deep: #9aa3af;
+  --silver-deep: #68778A;
 
   --text: #2f2b27;
   --text-soft: #6f6962;
@@ -98,10 +98,10 @@ img {
 
 .section__label {
   margin: 0 0 14px;
-  font-family: var(--font-serif);
+  color: var(--silver-deep);
   font-size: 13px;
   letter-spacing: 0.18em;
-  color: var(--silver-deep);
+  color: #68778A;
   text-align: center;
 }
 
