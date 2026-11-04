@@ -888,7 +888,7 @@ main {
 
 .area__region-list {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
 
   margin: 0;
@@ -2667,12 +2667,6 @@ box-shadow:
 .area__region-list li {
     padding: 16px 8px;
     font-size: 15px;
-}
-
-.area__region-list li:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc((100% - 10px) / 2);
 }
 
 .area__info {
