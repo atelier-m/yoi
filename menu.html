@@ -249,6 +249,20 @@
 
 <!-- Area -->
 <section id="area" class="area-detail section--alt">
+  <!-- 左上の水流装飾 -->
+  <svg
+    class="area-detail__wave"
+    viewBox="0 0 600 350"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path d="M-30 110 C120 40, 260 90, 420 20 S560 -10, 640 -40" />
+    <path d="M-30 145 C120 65, 280 105, 430 35 S560 5, 640 -25" />
+    <path d="M-30 185 C100 100, 160 140, 150 205 S60 300, -30 350" />
+  </svg>
+
+
   <div class="container">
 
     <div class="menu-heading">
@@ -281,8 +295,10 @@
           <ul class="area-detail__list">
             <li>
               <span class="area-detail__tag">右京区</span>
-              <span>京都市右京区（一部地域を除く）</span>
+              <span>京都市右京区<small class="area-detail__exception">（一部地域を除く）</small>
+              </span>
             </li>
+
             <li>
               <span class="area-detail__tag">中京区</span>
               <span>京都市中京区</span>
