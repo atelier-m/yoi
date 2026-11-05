@@ -1133,6 +1133,18 @@ box-shadow:
   margin-inline: auto;
 }
 
+/* 家紋 */
+.profile__kamon {
+  width: 48px;
+  margin: 0 auto 18px;
+}
+
+.profile__kamon img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* =========================
   Style
 ========================= */
@@ -2320,6 +2332,11 @@ box-shadow:
 
 .profile__text p + p {
   margin-top: 14px;
+}
+
+.profile__kamon {
+  width: 52px;
+  margin: 0 0 18px;
 }
 
 
