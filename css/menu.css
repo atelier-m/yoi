@@ -248,6 +248,37 @@
   z-index: 1;
 }
 
+/* =========================
+  Area 装飾
+========================= */
+
+.area-detail::before,
+.area-detail::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  aspect-ratio: 1;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* 左上 */
+.area-detail::before {
+  top: 20px;
+  left: 0;
+  background-image: url("../images/area_top_left.png");
+}
+
+/* 右下 */
+.area-detail::after {
+  right: -20px;
+  bottom: 0;
+  background-image: url("../images/area_bottom_right.png");
+}
+
 /* 導入文 */
 .area-detail__lead {
   max-width: 620px;
@@ -484,6 +515,22 @@
     grid-template-columns: minmax(0, 1fr);
     gap: 36px;
   }
+
+  /* Area 装飾：スマホ */
+.area-detail::before,
+.area-detail::after {
+  width: 150px;
+}
+
+.area-detail::before {
+  top: 10px;
+  left: -35px;
+}
+
+.area-detail::after {
+  right: -35px;
+  bottom: 10px;
+}
 
   .area-detail__map {
     max-width: 320px;
