@@ -243,20 +243,6 @@
   text-align: center;
 }
 
-/* 左上の青海波装飾 */
-.area-detail__seigaiha {
-  position: absolute;
-  top: 50px;
-  left: -40px;
-
-  width: 320px;
-  height: auto;
-
-  opacity: 0.45;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .area-detail > .container {
   position: relative;
   z-index: 1;
@@ -265,7 +251,7 @@
 /* 導入文 */
 .area-detail__lead {
   max-width: 620px;
-  margin: 0 auto 56px;
+  margin: 0 auto 40px;
   font-size: 14px;
   line-height: 2.1;
   letter-spacing: 0.05em;
@@ -286,7 +272,7 @@
 /* 地図 */
 .area-detail__map {
   width: 100%;
-  max-width: 440px;
+  max-width: 370px;
   margin: 0 auto;
   transform: none;
 }
@@ -392,7 +378,7 @@
 
 /* 出張費 */
 .area-detail__fee {
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
 .area-detail__price {
@@ -494,20 +480,13 @@
     font-size: 13px;
   }
 
-  .area-detail__seigaiha {
-    top: 35px;
-    left: -80px;
-    width: 200px;
-    opacity: 0.3;
-  }
-
   .area-detail__content {
     grid-template-columns: minmax(0, 1fr);
     gap: 36px;
   }
 
   .area-detail__map {
-    max-width: 440px;
+    max-width: 320px;
     margin: 0 auto;
   }
 
