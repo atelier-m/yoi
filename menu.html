@@ -249,18 +249,43 @@
 
 <!-- Area -->
 <section id="area" class="area-detail section--alt">
-  <!-- 左上の水流装飾 -->
-  <svg
-    class="area-detail__wave"
-    viewBox="0 0 600 350"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-    focusable="false"
-  >
-    <path d="M-30 110 C120 40, 260 90, 420 20 S560 -10, 640 -40" />
-    <path d="M-30 145 C120 65, 280 105, 430 35 S560 5, 640 -25" />
-    <path d="M-30 185 C100 100, 160 140, 150 205 S60 300, -30 350" />
-  </svg>
+<!-- 青海波の装飾 -->
+<svg
+  class="area-detail__seigaiha"
+  viewBox="0 0 360 220"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+  focusable="false"
+>
+  <defs>
+    <pattern
+      id="seigaiha-pattern"
+      width="80"
+      height="46"
+      patternUnits="userSpaceOnUse"
+    >
+      <g
+        fill="none"
+        stroke="#B8C4CF"
+        stroke-width="1.2"
+      >
+        <path d="M-40 46 A40 40 0 0 1 40 46"/>
+        <path d="M-30 46 A30 30 0 0 1 30 46"/>
+        <path d="M-20 46 A20 20 0 0 1 20 46"/>
+
+        <path d="M40 46 A40 40 0 0 1 120 46"/>
+        <path d="M50 46 A30 30 0 0 1 110 46"/>
+        <path d="M60 46 A20 20 0 0 1 100 46"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <rect
+    width="360"
+    height="220"
+    fill="url(#seigaiha-pattern)"
+  />
+</svg>
 
 
   <div class="container">
