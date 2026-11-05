@@ -1,414 +1,394 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" />
 
+    <title>美宵 - YOI -｜京都の出張着付け</title>
+    <meta
+      name="description"
+      content="京都市内を中心に出張着付けを承ります。お宮参り・七五三・入学式・卒業式・結婚式参列など、大切な一日を整った美しさで。"
+    />
 
-  <title>美宵 - YOI -｜京都の出張着付け</title>
-  <meta name="description" content="京都市内を中心に出張着付けを承ります。お宮参り・七五三・入学式・卒業式・結婚式参列など、大切な一日を整った美しさで。">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/menu.css" />
-</head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <img
+            src="images/logo.png"
+            alt="美宵 - YOI -"
+            class="header__logo-img"
+          />
 
-<body>
+          <div class="header__logo-text">
+            <span class="header__name"> 美宵 <small>- YOI -</small> </span>
 
-  <!-- Header -->
-<header class="site-header">
-  <div class="header__inner">
-
-    <a href="index.html" class="header__logo">
-      <img src="images/logo.png" alt="美宵 - YOI -" class="header__logo-img">
-
-      <div class="header__logo-text">
-        <span class="header__name">
-          美宵 <small>- YOI -</small>
-        </span>
-
-        <span class="header__sub">
-          京都の出張着付け
-        </span>
-      </div>
-    </a>
-
-    <nav class="header__nav" id="headernav">
-      <a href="index.html#service">Service</a>
-<a href="index.html#menu">Menu</a>
-<a href="index.html#style">Style</a>
-<a href="index.html#flow">Flow</a>
-<a href="index.html#faq">FAQ</a>
-<a href="index.html#reserve">Reserve</a>
-
-      <div class="header__sns">
-        <a href="index.html#reserve" class="header__line-btn">
-          LINEで予約する
+            <span class="header__sub"> 京都の出張着付け </span>
+          </div>
         </a>
 
-        <a
-  href="https://www.instagram.com/yoi.kimono/"
-  class="header__sns-link"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Instagramを見る
-        </a>
+        <nav class="header__nav" id="headernav">
+          <a href="index.html#service">Service</a>
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#style">Style</a>
+          <a href="index.html#flow">Flow</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#reserve">Reserve</a>
+
+          <div class="header__sns">
+            <a href="index.html#reserve" class="header__line-btn">
+              LINEで予約する
+            </a>
+
+            <a
+              href="https://www.instagram.com/yoi.kimono/"
+              class="header__sns-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagramを見る
+            </a>
+          </div>
+        </nav>
+
+        <a href="index.html#reserve" class="header__cta"> LINEで予約 </a>
+
+        <button
+          class="header__toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="メニューを開閉"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </nav>
+    </header>
 
-    <a href="index.html#reserve" class="header__cta">
-      LINEで予約
-    </a>
+    <main class="subpage-main">
+      <!-- Page introduction -->
+      <section class="menu-hero section--alt">
+        <div class="container">
+          <p class="section__label">Menu</p>
 
-    <button class="header__toggle" id="menuToggle"
-        type="button" aria-label="メニューを開閉">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+          <h1 class="section__title">着付けメニュー・料金</h1>
 
-  </div>
-</header>
+          <p class="section__text">
+            お着物の種類やご利用内容に合わせて、<br />
+            丁寧にお支度いたします。
+          </p>
+        </div>
+      </section>
 
-<main class="subpage-main">
+      <!-- Adult menu -->
+      <section class="menu-section section">
+        <div class="container">
+          <div class="menu-heading">
+            <p class="menu-heading__en">Kimono Dressing</p>
+            <h2 class="menu-heading__title">大人の着付け</h2>
+          </div>
 
-  <!-- Page introduction -->
-  <section class="menu-hero section--alt">
-    <div class="container">
+          <div class="menu-layout menu-layout--adult">
+            <div class="menu-layout__content">
+              <div class="menu-list">
+                <div class="menu-item">
+                  <div class="menu-item__info">
+                    <h3 class="menu-item__name">振袖</h3>
+                    <p class="menu-item__note">成人式は別途料金となります。</p>
+                  </div>
+                  <p class="menu-item__price">¥10,000</p>
+                </div>
 
-      <p class="section__label">Menu</p>
+                <div class="menu-item">
+                  <h3 class="menu-item__name">留袖・色留袖</h3>
+                  <p class="menu-item__price">¥8,000</p>
+                </div>
 
-      <h1 class="section__title">
-        着付けメニュー・料金
-      </h1>
+                <div class="menu-item">
+                  <h3 class="menu-item__name">訪問着・付け下げ・色無地</h3>
+                  <p class="menu-item__price">¥7,000</p>
+                </div>
 
-      <p class="section__text">
-        お着物の種類やご利用内容に合わせて、<br>
-        丁寧にお支度いたします。
-      </p>
+                <div class="menu-item">
+                  <h3 class="menu-item__name">女袴</h3>
+                  <p class="menu-item__price">¥7,000</p>
+                </div>
 
-    </div>
-  </section>
+                <div class="menu-item">
+                  <h3 class="menu-item__name">小紋</h3>
+                  <p class="menu-item__price">¥5,000</p>
+                </div>
 
-
-  <!-- Adult menu -->
-<section class="menu-section section">
-  <div class="container">
-
-    <div class="menu-heading">
-      <p class="menu-heading__en">Kimono Dressing</p>
-      <h2 class="menu-heading__title">大人の着付け</h2>
-    </div>
-
-    <div class="menu-layout menu-layout--adult">
-
-      <div class="menu-layout__content">
-
-        <div class="menu-list">
-
-          <div class="menu-item">
-            <div class="menu-item__info">
-              <h3 class="menu-item__name">振袖</h3>
-              <p class="menu-item__note">成人式は別途料金となります。</p>
+                <div class="menu-item">
+                  <h3 class="menu-item__name">浴衣</h3>
+                  <p class="menu-item__price">¥4,000</p>
+                </div>
+              </div>
             </div>
-            <p class="menu-item__price">¥10,000</p>
-          </div>
 
-          <div class="menu-item">
-            <h3 class="menu-item__name">留袖・色留袖</h3>
-            <p class="menu-item__price">¥8,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">訪問着・付け下げ・色無地</h3>
-            <p class="menu-item__price">¥7,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">女袴</h3>
-            <p class="menu-item__price">¥7,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">小紋</h3>
-            <p class="menu-item__price">¥5,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">浴衣</h3>
-            <p class="menu-item__price">¥4,000</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="menu-layout__image">
-        <img
-          src="images/menu_adult.png"
-          alt="着物の帯を整えている着付けのイメージ"
-          loading="lazy"
-        >
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- Children's menu -->
-<section class="menu-section section--alt">
-  <div class="container">
-
-    <div class="menu-heading">
-      <p class="menu-heading__en">Children’s Kimono</p>
-      <h2 class="menu-heading__title">七五三・お子さま</h2>
-    </div>
-
-    <div class="menu-layout menu-layout--children">
-
-      <div class="menu-layout__content">
-
-        <div class="menu-list">
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">十三参り</h3>
-            <p class="menu-item__price">¥7,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">七五三（7歳・手結び帯）</h3>
-            <p class="menu-item__price">¥7,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">七五三（7歳・作り帯）</h3>
-            <p class="menu-item__price">¥6,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">七五三（男児3歳・5歳袴）</h3>
-            <p class="menu-item__price">¥6,000</p>
-          </div>
-
-          <div class="menu-item">
-            <h3 class="menu-item__name">七五三（3歳被布）</h3>
-            <p class="menu-item__price">¥5,000</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="menu-layout__image">
-        <img
-          src="images/menu_children.png"
-          alt="七五三の着付けをしているイメージ"
-          loading="lazy"
-        >
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-  <!-- Additional fee -->
-  <section class="usage-section section section">
-    <div class="container">
-
-      <div class="menu-heading">
-        <p class="menu-heading__en">Additional Fee</p>
-        <h2 class="menu-heading__title">追加料金</h2>
-      </div>
-
-      <div class="usage-list">
-
-        <div class="usage-item">
-          <p class="usage-item__label">早朝料金</p>
-          <div class="usage-item__detail">
-            <p>6:00〜8:00開始</p>
-            <p class="usage-item__price">＋¥1,000</p>
+            <div class="menu-layout__image">
+              <img
+                src="images/menu_adult.png"
+                alt="着物の帯を整えている着付けのイメージ"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
+      <!-- Children's menu -->
+      <section class="menu-section section--alt">
+        <div class="container">
+          <div class="menu-heading">
+            <p class="menu-heading__en">Children’s Kimono</p>
+            <h2 class="menu-heading__title">七五三・お子さま</h2>
+          </div>
 
-    </div>
-  </section>
-  
+          <div class="menu-layout menu-layout--children">
+            <div class="menu-layout__content">
+              <div class="menu-list">
+                <div class="menu-item">
+                  <h3 class="menu-item__name">十三参り</h3>
+                  <p class="menu-item__price">¥7,000</p>
+                </div>
 
-<!-- Area -->
-<section id="area" class="area-detail section--alt">
-  <div class="container">
+                <div class="menu-item">
+                  <h3 class="menu-item__name">七五三（7歳・手結び帯）</h3>
+                  <p class="menu-item__price">¥7,000</p>
+                </div>
 
-    <div class="menu-heading">
-      <p class="menu-heading__en">Service Area</p>
-      <h2 class="menu-heading__title">出張対応エリア</h2>
-    </div>
+                <div class="menu-item">
+                  <h3 class="menu-item__name">七五三（7歳・作り帯）</h3>
+                  <p class="menu-item__price">¥6,000</p>
+                </div>
 
-    <p class="area-detail__lead">
-      京都市内の下記エリアへ出張いたします。<br>
-      ご自宅やご指定の場所へお伺いし、着付けをいたします。
-    </p>
+                <div class="menu-item">
+                  <h3 class="menu-item__name">七五三（男児3歳・5歳袴）</h3>
+                  <p class="menu-item__price">¥6,000</p>
+                </div>
 
-    <div class="area-detail__content">
+                <div class="menu-item">
+                  <h3 class="menu-item__name">七五三（3歳被布）</h3>
+                  <p class="menu-item__price">¥5,000</p>
+                </div>
+              </div>
+            </div>
 
-      <!-- 地図 -->
-      <div class="area-detail__map">
-        <img
-          src="images/area-map.svg"
-          alt="京都市の出張対応エリア地図。右京区は一部対応、中京区・北区・上京区は対応エリア"
-          loading="lazy"
-        >
-      </div>
-
-      <!-- 対応エリア・出張費 -->
-      <div class="area-detail__details">
-
-        <div class="area-detail__regions">
-          <h3 class="area-detail__heading">対応エリア</h3>
-
-          <ul class="area-detail__list">
-            <li>
-              <span class="area-detail__tag">右京区</span>
-              <span>京都市右京区<small class="area-detail__exception">（一部地域を除く）</small>
-              </span>
-            </li>
-
-            <li>
-              <span class="area-detail__tag">中京区</span>
-              <span>京都市中京区</span>
-            </li>
-            <li>
-              <span class="area-detail__tag">北区</span>
-              <span>京都市北区</span>
-            </li>
-            <li>
-              <span class="area-detail__tag">上京区</span>
-              <span>京都市上京区</span>
-            </li>
-          </ul>
+            <div class="menu-layout__image">
+              <img
+                src="images/menu_children.png"
+                alt="七五三の着付けをしているイメージ"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="area-detail__fee">
-          <h3 class="area-detail__heading">出張費</h3>
+      <!-- Additional fee -->
+      <section class="usage-section section section">
+        <div class="container">
+          <div class="menu-heading">
+            <p class="menu-heading__en">Additional Fee</p>
+            <h2 class="menu-heading__title">追加料金</h2>
+          </div>
 
-          <p class="area-detail__price">
-            <strong>1,000円</strong>
-            <span>（1回のご訪問につき）</span>
+          <div class="usage-list">
+            <div class="usage-item">
+              <p class="usage-item__label">早朝料金</p>
+              <div class="usage-item__detail">
+                <p>6:00〜8:00開始</p>
+                <p class="usage-item__price">＋¥1,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Area -->
+      <section id="area" class="area-detail section--alt">
+        <div class="container">
+          <div class="menu-heading">
+            <p class="menu-heading__en">Service Area</p>
+            <h2 class="menu-heading__title">出張対応エリア</h2>
+          </div>
+
+          <p class="area-detail__lead">
+            京都市内の下記エリアへ出張いたします。<br />
+            ご自宅やご指定の場所へお伺いし、着付けをいたします。
           </p>
 
-          <p class="area-detail__parking">
-            駐車場代は別途実費となります。
+          <div class="area-detail__content">
+            <!-- 地図 -->
+            <div class="area-detail__map">
+              <img
+                src="images/area-map.svg"
+                alt="京都市の出張対応エリア地図。右京区は一部対応、中京区・北区・上京区は対応エリア"
+                loading="lazy"
+              />
+            </div>
+
+            <!-- 対応エリア・出張費 -->
+            <div class="area-detail__details">
+              <div class="area-detail__regions">
+                <h3 class="area-detail__heading">対応エリア</h3>
+
+                <ul class="area-detail__list">
+                  <li>
+                    <span class="area-detail__tag">右京区</span>
+                    <span
+                      >京都市右京区<small class="area-detail__exception"
+                        >（一部地域を除く）</small
+                      >
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="area-detail__tag">中京区</span>
+                    <span>京都市中京区</span>
+                  </li>
+                  <li>
+                    <span class="area-detail__tag">北区</span>
+                    <span>京都市北区</span>
+                  </li>
+                  <li>
+                    <span class="area-detail__tag">上京区</span>
+                    <span>京都市上京区</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="area-detail__fee">
+                <h3 class="area-detail__heading">出張費</h3>
+
+                <p class="area-detail__price">
+                  <strong>1,000円</strong>
+                  <span>（1回のご訪問につき）</span>
+                </p>
+
+                <p class="area-detail__parking">
+                  駐車場代は別途実費となります。
+                </p>
+              </div>
+
+              <div class="area-detail__notice">
+                <p>※右京区は高雄山より北側（京北地域を含む）を除きます。</p>
+                <p>※地図は対応エリアの目安です。</p>
+                <p>※対応エリア外のご依頼については、事前にご相談ください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="menu-cta section--alt">
+        <div class="container">
+          <p class="section__label">Contact</p>
+
+          <h2 class="section__title">料金やご予約について</h2>
+
+          <div class="menu-cta__divider">
+            <span>❈</span>
+          </div>
+
+          <p class="section__text">
+            ご不明な点がございましたら、<br />
+            LINEよりお気軽にご相談ください。
           </p>
+
+          <div class="menu-cta__button">
+            <a href="index.html#reserve" class="btn btn--primary">
+              LINEでご予約・ご相談
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img
+            src="images/logo.png"
+            alt="美宵 - YOI -"
+            class="footer__logo-img"
+          />
+
+          <p class="footer__logo-text">美宵 <span>- YOI -</span></p>
+
+          <p class="footer__message">古き良き装いを、今の暮らしに。</p>
         </div>
 
-        <div class="area-detail__notice">
-          <p>※右京区は高雄山より北側（京北地域を含む）を除きます。</p>
-          <p>※地図は対応エリアの目安です。</p>
-          <p>※対応エリア外のご依頼については、事前にご相談ください。</p>
-        </div>
-
+        <nav class="footer__nav">
+          <a href="index.html#service">Service</a>
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#style">Style</a>
+          <a href="index.html#flow">Flow</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#reserve">Reserve</a>
+        </nav>
       </div>
+
+      <div class="footer__links">
+        <a href="policy.html">プライバシーポリシー</a>
+        <a href="law.html">特定商取引法に基づく表記</a>
+      </div>
+
+      <p class="footer__copy">© 美宵 - YOI -</p>
+    </footer>
+
+    <a href="#reserve" class="fixed-line"> LINEで予約 </a>
+
+    <div class="lightbox" id="lightbox">
+      <button
+        class="lightbox__close"
+        id="lightboxClose"
+        type="button"
+        aria-label="画像を閉じる"
+      >
+        ×
+      </button>
+
+      <button
+        class="lightbox__prev"
+        id="lightboxPrev"
+        type="button"
+        aria-label="前の画像へ"
+      >
+        ‹
+      </button>
+
+      <img alt="" class="lightbox__img" id="lightboxImg" />
+
+      <button
+        class="lightbox__next"
+        id="lightboxNext"
+        type="button"
+        aria-label="次の画像へ"
+      >
+        ›
+      </button>
     </div>
 
-  </div>
-</section>
-
-
-
-  <!-- CTA -->
-<section class="menu-cta section--alt">
-  <div class="container">
-
-    <p class="section__label">Contact</p>
-
-    <h2 class="section__title">
-      料金やご予約について
-    </h2>
-
-    <div class="menu-cta__divider">
-      <span>❈</span>
-    </div>
-
-    <p class="section__text">
-      ご不明な点がございましたら、<br>
-      LINEよりお気軽にご相談ください。
-    </p>
-
-    <div class="menu-cta__button">
-      <a href="index.html#reserve" class="btn btn--primary">
-        LINEでご予約・ご相談
-      </a>
-    </div>
-
-  </div>
-</section>
-
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer__inner">
-
-    <div class="footer__brand">
-      <img src="images/logo.png" alt="美宵 - YOI -" class="footer__logo-img">
-
-      <p class="footer__logo-text">
-        美宵 <span>- YOI -</span>
-      </p>
-
-      <p class="footer__message">
-  古き良き装いを、今の暮らしに。
-</p>
-
-    </div>
-
-    <nav class="footer__nav">
-     <a href="index.html#service">Service</a>
-<a href="index.html#menu">Menu</a>
-<a href="index.html#style">Style</a>
-<a href="index.html#flow">Flow</a>
-<a href="index.html#faq">FAQ</a>
-<a href="index.html#reserve">Reserve</a>
-    </nav>
-
-  </div>
-
-  <div class="footer__links">
-    <a href="policy.html">プライバシーポリシー</a>
-    <a href="law.html">特定商取引法に基づく表記</a>
-  </div>
-
-  <p class="footer__copy">© 美宵 - YOI -</p>
-</footer>
-
-     <a href="#reserve" class="fixed-line">
-  LINEで予約
-</a>
-
-<div class="lightbox" id="lightbox">
-  <button class="lightbox__close" id="lightboxClose"
-        type="button" aria-label="画像を閉じる">×</button>
-
-  <button class="lightbox__prev" id="lightboxPrev"
-        type="button" aria-label="前の画像へ">‹</button>
-
-  <img alt="" class="lightbox__img" id="lightboxImg">
-
-  <button class="lightbox__next" id="lightboxNext" type="button" aria-label="次の画像へ">›</button>
-</div>
-
- <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

@@ -135,7 +135,6 @@
   color: var(--navy);
 }
 
-
 /* 追加料金 */
 .usage-list {
   max-width: 620px;
@@ -231,8 +230,6 @@
   grid-row: 1;
 }
 
-
-
 /* =========================
   出張対応エリア・出張費
 ========================= */
@@ -314,7 +311,6 @@
   height: auto;
 }
 
-
 /* 右側の案内 */
 .area-detail__details {
   min-width: 0;
@@ -377,7 +373,6 @@
   color: var(--navy);
 }
 
-
 /* 右京区の補足 */
 .area-detail__exception {
   font-family: var(--font-sans);
@@ -386,7 +381,6 @@
   letter-spacing: 0.02em;
   color: var(--text-soft);
 }
-
 
 /* 区名タグ */
 .area-detail__tag {
@@ -458,14 +452,11 @@
   margin-top: 6px;
 }
 
-
-
 /* =========================
   スマホ：767px以下
 ========================= */
 
 @media (max-width: 767px) {
-
   .menu-hero::before,
   .menu-hero::after {
     width: 180px;
@@ -517,20 +508,20 @@
   }
 
   /* Area 装飾：スマホ */
-.area-detail::before,
-.area-detail::after {
-  width: 150px;
-}
+  .area-detail::before,
+  .area-detail::after {
+    width: 150px;
+  }
 
-.area-detail::before {
-  top: 10px;
-  left: -35px;
-}
+  .area-detail::before {
+    top: 10px;
+    left: -35px;
+  }
 
-.area-detail::after {
-  right: -35px;
-  bottom: 10px;
-}
+  .area-detail::after {
+    right: -35px;
+    bottom: 10px;
+  }
 
   .area-detail__map {
     max-width: 320px;
@@ -594,7 +585,6 @@
     pointer-events: none;
     transform: translateY(12px);
   }
-
 }
 
 /* =========================
@@ -653,7 +643,6 @@
   margin: 32px auto 0;
 }
 
-
 /* アンカー移動時の固定ヘッダー対策 */
 #area {
   scroll-margin-top: 100px;
@@ -664,7 +653,6 @@
 ========================= */
 
 @media (min-width: 1024px) {
-
   .menu-item {
     transition:
       background 0.3s ease,

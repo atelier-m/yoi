@@ -1,820 +1,772 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png" />
 
+    <title>美宵 - YOI -｜京都の出張着付け</title>
+    <meta
+      name="description"
+      content="京都市内を中心に出張着付けを承ります。お宮参り・七五三・入学式・卒業式・結婚式参列など、大切な一日を整った美しさで。"
+    />
 
-  <title>美宵 - YOI -｜京都の出張着付け</title>
-  <meta name="description" content="京都市内を中心に出張着付けを承ります。お宮参り・七五三・入学式・卒業式・結婚式参列など、大切な一日を整った美しさで。">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo">
+          <img
+            src="images/logo.png"
+            alt="美宵 - YOI -"
+            class="header__logo-img"
+          />
 
-<body>
+          <div class="header__logo-text">
+            <span class="header__name"> 美宵 <small>- YOI -</small> </span>
 
-  <!-- Header -->
-<header class="site-header">
-  <div class="header__inner">
-
-    <a href="index.html" class="header__logo">
-      <img src="images/logo.png" alt="美宵 - YOI -" class="header__logo-img">
-
-      <div class="header__logo-text">
-        <span class="header__name">
-          美宵 <small>- YOI -</small>
-        </span>
-
-        <span class="header__sub">
-          京都の出張着付け
-        </span>
-      </div>
-    </a>
-
-    <nav class="header__nav" id="headernav">
-      <a href="index.html#service">Service</a>
-<a href="index.html#menu">Menu</a>
-<a href="index.html#style">Style</a>
-<a href="index.html#flow">Flow</a>
-<a href="index.html#faq">FAQ</a>
-<a href="index.html#reserve">Reserve</a>
-
-      <div class="header__sns">
-        <a href="#reserve" class="header__line-btn">
-          LINEで予約する
+            <span class="header__sub"> 京都の出張着付け </span>
+          </div>
         </a>
 
-        <a
-  href="https://www.instagram.com/yoi.kimono/"
-  class="header__sns-link"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Instagramを見る
-        </a>
+        <nav class="header__nav" id="headernav">
+          <a href="index.html#service">Service</a>
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#style">Style</a>
+          <a href="index.html#flow">Flow</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#reserve">Reserve</a>
+
+          <div class="header__sns">
+            <a href="#reserve" class="header__line-btn"> LINEで予約する </a>
+
+            <a
+              href="https://www.instagram.com/yoi.kimono/"
+              class="header__sns-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagramを見る
+            </a>
+          </div>
+        </nav>
+
+        <a href="#reserve" class="header__cta"> LINEで予約 </a>
+
+        <button
+          class="header__toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="メニューを開閉"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </nav>
+    </header>
 
-    <a href="#reserve" class="header__cta">
-      LINEで予約
-    </a>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__image">
+          <h1 class="hero__title">
+            <span>その日を、</span>
+            <span>美しく整える。</span>
+          </h1>
+        </div>
 
-    <button class="header__toggle" id="menuToggle"
-        type="button" aria-label="メニューを開閉">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+        <div class="concept__heading">
+          <div class="hero__content">
+            <p class="hero__text">古き良き装いを、<br />今の暮らしに美しく。</p>
 
-  </div>
-</header>
+            <div class="hero__divider">
+              <span>❈</span>
+            </div>
 
-<main>
+            <p class="hero__label">Kyoto Kimono Dressing</p>
 
-  <!-- Hero -->
-<section class="hero">
+            <div class="hero__actions">
+              <a href="#reserve" class="btn btn--primary"> LINEで予約する </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <div class="hero__image">
+      <!-- Concept -->
+      <section class="concept section">
+        <div class="container">
+          <!-- 写真 -->
+          <div class="concept__visual">
+            <img
+              src="images/concept.jpg"
+              alt="美宵の装いを表す着物のイメージ"
+              class="concept__img"
+            />
+          </div>
 
-<h1 class="hero__title">
-  <span>その日を、</span>
-  <span>美しく整える。</span>
-</h1>
+          <!-- 文章エリア -->
+          <div class="concept__content">
+            <!-- ラベル・見出し -->
+            <div class="concept__heading">
+              <p class="section__label">Concept</p>
 
-  </div>
+              <h2 class="section__title">
+                古き良き装いを、<br />
+                今の暮らしに。
+              </h2>
+            </div>
 
- <div class="concept__heading">
+            <!-- 本文 -->
+            <div class="concept__body">
+              <p class="concept__lead">
+                忙しい毎日の中でも、<br />
+                大切な日には、きちんと整えたい。
+              </p>
 
-  <div class="hero__content">
+              <p class="concept__text">
+                お宮参りや七五三、入学式や卒業式。<br />
+                人生の節目に訪れる、大切な一日。
+              </p>
 
-    <p class="hero__text">
-      古き良き装いを、<br>今の暮らしに美しく。
-    </p>
+              <p class="concept__text">
+                美宵では、あなたらしい自然な美しさを大切に、<br />
+                一人ひとりに寄り添う着付けをお届けします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="hero__divider">
-      <span>❈</span>
-    </div>
+      <!-- Service -->
+      <section id="service" class="service section--alt">
+        <div class="container">
+          <p class="section__label">Service</p>
+          <h2 class="section__title">出張着付けサービス</h2>
 
-    <p class="hero__label">
-      Kyoto Kimono Dressing
-    </p>
+          <p class="service__lead">
+            ご自宅やご指定の場所へお伺いし、<br />
+            大切な一日を美しく整えます。
+          </p>
 
-    <div class="hero__actions">
-      <a href="#reserve" class="btn btn--primary">
-        LINEで予約する
-      </a>
-    </div>
+          <div class="service__body">
+            <div class="service__text">
+              <ul class="service__list">
+                <li>成人式・卒業式・入学式</li>
+                <li>七五三・お宮参り</li>
+                <li>結婚式参列</li>
+                <li>お出かけ・お食事</li>
+              </ul>
+            </div>
 
-  </div>
+            <figure class="service__image">
+              <img src="images/style03.jpg" alt="着物姿の女性" />
+            </figure>
+          </div>
+        </div>
+      </section>
 
-</div>
+      <!-- Menu -->
+      <section id="menu" class="menu section">
+        <div class="container">
+          <p class="section__label">Menu</p>
 
-</section>
+          <h2 class="section__title">ご案内メニュー</h2>
 
-<!-- Concept -->
-<section class="concept section">
-  <div class="container">
+          <p class="menu__lead">
+            お着物の種類やご利用シーンに合わせて、<br class="menu__br-sp" />
+            ご案内しております。
+          </p>
 
-    <!-- 写真 -->
-    <div class="concept__visual">
-      <img
-        src="images/concept.jpg"
-        alt="美宵の装いを表す着物のイメージ"
-        class="concept__img"
-      >
-    </div>
-
-    <!-- 文章エリア -->
-    <div class="concept__content">
-
-      <!-- ラベル・見出し -->
-      <div class="concept__heading">
-        <p class="section__label">Concept</p>
-
-        <h2 class="section__title">
-          古き良き装いを、<br>
-          今の暮らしに。
-        </h2>
-      </div>
-
-      <!-- 本文 -->
-      <div class="concept__body">
-
-        <p class="concept__lead">
-          忙しい毎日の中でも、<br>
-          大切な日には、きちんと整えたい。
-        </p>
-
-        <p class="concept__text">
-          お宮参りや七五三、入学式や卒業式。<br>
-          人生の節目に訪れる、大切な一日。
-        </p>
-
-        <p class="concept__text">
-          美宵では、あなたらしい自然な美しさを大切に、<br>
-          一人ひとりに寄り添う着付けをお届けします。
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- Service -->
-  <section id="service" class="service section--alt">
-  <div class="container">
-
-    <p class="section__label">Service</p>
-    <h2 class="section__title">出張着付けサービス</h2>
-
-    <p class="service__lead">
-      ご自宅やご指定の場所へお伺いし、<br>
-      大切な一日を美しく整えます。
-    </p>
-
-    <div class="service__body">
-      <div class="service__text">
-        <ul class="service__list">
-          <li>成人式・卒業式・入学式</li>
-          <li>七五三・お宮参り</li>
-          <li>結婚式参列</li>
-          <li>お出かけ・お食事</li>
-        </ul>
-      </div>
-
-      <figure class="service__image">
-        <img src="images/style03.jpg" alt="着物姿の女性">
-      </figure>
-    </div>
-
-  </div>
-</section>
-
-<!-- Menu -->
-  <section id="menu" class="menu section">
-   <div class="container">
-
-    <p class="section__label">Menu</p>
-
-    <h2 class="section__title">
-ご案内メニュー
-    </h2>
-
-    <p class="menu__lead">
-      お着物の種類やご利用シーンに合わせて、<br class="menu__br-sp">
-      ご案内しております。
-    </p>
-    
-    <ul class="menu__list">
-
-      <li class="menu__item">
-        <span class="menu__name">振袖(成人式は別途料金)</span>
-        <span class="menu__value">¥10,000</span>
-      </li>
-
-      <li class="menu__item">
-        <span class="menu__name">留袖・色留袖</span>
-        <span class="menu__value">¥8,000</span>
-      </li>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <span class="menu__name">振袖(成人式は別途料金)</span>
+              <span class="menu__value">¥10,000</span>
+            </li>
 
             <li class="menu__item">
-        <span class="menu__name">浴衣</span>
-        <span class="menu__value">¥4,000</span>
-      </li>
+              <span class="menu__name">留袖・色留袖</span>
+              <span class="menu__value">¥8,000</span>
+            </li>
 
-      <li class="menu__item">
-        <span class="menu__name">七五三</span>
-        <span class="menu__value">¥5,000~</span>
-      </li>
+            <li class="menu__item">
+              <span class="menu__name">浴衣</span>
+              <span class="menu__value">¥4,000</span>
+            </li>
 
-    </ul>
+            <li class="menu__item">
+              <span class="menu__name">七五三</span>
+              <span class="menu__value">¥5,000~</span>
+            </li>
+          </ul>
 
-    <div class="menu__detail-link">
-      <a href="menu.html" class="btn btn--primary">
-        メニュー詳細を見る
-      </a>
-    </div>
+          <div class="menu__detail-link">
+            <a href="menu.html" class="btn btn--primary">
+              メニュー詳細を見る
+            </a>
+          </div>
 
-    <p class="menu__note">
-      ※内容や条件により料金が変動する場合がございます。<br>
-      詳しくはLINEよりお気軽にご相談ください。
-    </p>
-
-   </div>
-  </section>
-
-  
-<!-- Area -->
-<section class="area section--alt">
-  <div class="container">
-
-    <div class="section-head">
-      <p class="section__label">Area</p>
-      <h2 class="section__title">出張対応エリア</h2>
-    </div>
-
-    <div class="area__content">
-
-      <p class="area__intro">
-        京都市内を中心に、<br class="sp-only">
-        ご自宅やご指定の場所へ伺います。
-      </p>
-
-<!-- 京都の街並みと着物 -->
-<figure class="area__visual">
-  <img
-    src="images/area-kimono.png"
-    alt="京都風の街並みを着物姿で歩く足元"
-    loading="lazy"
-  >
-</figure>
-
-      <!-- 対応地域 -->
-      <div class="area__regions">
-        <p class="area__regions-title">主な対応地域</p>
-
-        <ul class="area__region-list">
-         <li>右京区</li>
-         <li>中京区</li>
-         <li>北区</li>
-         <li>上京区</li>
-        </ul>
-
-        <p class="area__sub">
-          ※右京区は高雄山より北側を除きます。<br>
-          その他の地域もお気軽にご相談ください。
-        </p>
-      </div>
-
-      <!-- 出張に関するご案内 -->
-      <div class="area__info">
-        <p class="area__fee">
-          出張費 <span>一律 ¥1,000</span>
-        </p>
-
-        <ul class="area__notes">
-          <li>駐車スペースの確保をお願いいたします。</li>
-          <li>コインパーキングを利用する場合は、駐車料金を実費にてお願いしております。</li>
-        </ul>
-      </div>
-
-      <div class="area__link-wrap">
-        <a href="menu.html#area" class="area__detail-link">
-          出張費・対応エリアを詳しく見る
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-  
-<!-- Strength -->
-<section class="strength section">
-  <div class="container">
-
-    <p class="section__label">Strength</p>
-
-    <h2 class="section__title">
-      美宵の強み
-    </h2>
-
-    <div class="strength__list">
-
-      
-<article class="strength__item">
-  <span class="strength__number" aria-hidden="true">01</span>
-
-  <div class="strength__inner">
-    <h3 class="strength__title">短時間でも、美しく整える</h3>
-    <p class="strength__text">
-      限られた時間でも、品よく仕上げます。
-    </p>
-  </div>
-
-  <span class="strength__en" aria-hidden="true">Beauty</span>
-</article>
-
-<article class="strength__item">
-  <span class="strength__number" aria-hidden="true">02</span>
-
-  <div class="strength__inner">
-    <h3 class="strength__title">着崩れしにくい安心感</h3>
-    <p class="strength__text">
-      長時間でも、美しさを保ちます。
-    </p>
-  </div>
-
-  <span class="strength__en" aria-hidden="true">Comfort</span>
-</article>
-
-<article class="strength__item">
-  <span class="strength__number" aria-hidden="true">03</span>
-
-  <div class="strength__inner">
-    <h3 class="strength__title">完全予約制のプライベート対応</h3>
-    <p class="strength__text">
-      一人ひとりに、丁寧に向き合います。
-    </p>
-  </div>
-
-  <span class="strength__en" aria-hidden="true">Private</span>
-</article>
-
-<article class="strength__item">
-  <span class="strength__number" aria-hidden="true">04</span>
-
-  <div class="strength__inner">
-    <h3 class="strength__title">早朝・土日祝のご相談も可能</h3>
-    <p class="strength__text">
-      結婚式や式典などの早い時間帯や、土日祝日のご予約も承ります。<br>
-      お気軽にご相談ください。
-    </p>
-  </div>
-
-  <span class="strength__en" aria-hidden="true">Flexible</span>
-</article>
-
-
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- Profile -->
-<section class="profile section--alt">
-  <div class="container">
-
-    <p class="section__label">Profile</p>
-    <h2 class="section__title">安心してお任せいただくために</h2>
-
-    <div class="profile__inner">
-
-      <div class="profile__img">
-        <img src="images/profile.jpg" alt="着付け師">
-      </div>
-
-      <div class="profile__text">
-
-        <!-- 家紋 -->
-        <div class="profile__kamon">
-          <img src="images/yoi-kamon.svg" alt="板橋家の家紋">
+          <p class="menu__note">
+            ※内容や条件により料金が変動する場合がございます。<br />
+            詳しくはLINEよりお気軽にご相談ください。
+          </p>
         </div>
+      </section>
 
-        <h3>板橋 亜由美</h3>
+      <!-- Area -->
+      <section class="area section--alt">
+        <div class="container">
+          <div class="section-head">
+            <p class="section__label">Area</p>
+            <h2 class="section__title">出張対応エリア</h2>
+          </div>
 
-        <p>
-          一人ひとりに寄り添い、
-          大切な一日を美しく整えるお手伝いをしています。
-        </p>
+          <div class="area__content">
+            <p class="area__intro">
+              京都市内を中心に、<br class="sp-only" />
+              ご自宅やご指定の場所へ伺います。
+            </p>
 
-        <p>
-          着物をもっと自然に楽しんでいただけるよう、
-          半衿の制作も行っています。
-        </p>
+            <!-- 京都の街並みと着物 -->
+            <figure class="area__visual">
+              <img
+                src="images/area-kimono.png"
+                alt="京都風の街並みを着物姿で歩く足元"
+                loading="lazy"
+              />
+            </figure>
 
-      </div>
+            <!-- 対応地域 -->
+            <div class="area__regions">
+              <p class="area__regions-title">主な対応地域</p>
 
-    </div>
+              <ul class="area__region-list">
+                <li>右京区</li>
+                <li>中京区</li>
+                <li>北区</li>
+                <li>上京区</li>
+              </ul>
 
-  </div>
-</section>
+              <p class="area__sub">
+                ※右京区は高雄山より北側を除きます。<br />
+                その他の地域もお気軽にご相談ください。
+              </p>
+            </div>
 
-<!-- Style -->
-  <section id="style" class="style section">
-  <div class="container">
-    <p class="section__label">Style</p>
-    <h2 class="section__title">装いの仕上がり</h2>
+            <!-- 出張に関するご案内 -->
+            <div class="area__info">
+              <p class="area__fee">出張費 <span>一律 ¥1,000</span></p>
 
-    <p class="style__lead">
-      細部まで整えた、美しい仕上がりをご覧ください。
-    </p>
+              <ul class="area__notes">
+                <li>駐車スペースの確保をお願いいたします。</li>
+                <li>
+                  コインパーキングを利用する場合は、駐車料金を実費にてお願いしております。
+                </li>
+              </ul>
+            </div>
 
-    <div class="style__gallery">
-      <img src="images/style01.jpg" class="style__img style__img--main js-lightbox" data-index="0" alt="薄紫の着物の衿元を整える着付けの様子">
-      <img src="images/style02.jpg" class="style__img style__img--right js-lightbox" data-index="1" alt="薄紫の着物と白い帯を合わせた着付けの正面姿">
-      <img src="images/style03.jpg" class="style__img style__img--left js-lightbox" data-index="2" alt="帯結びと衿元の仕上がりが分かる着物の後ろ姿">
-    </div>
+            <div class="area__link-wrap">
+              <a href="menu.html#area" class="area__detail-link">
+                出張費・対応エリアを詳しく見る
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <p class="style__text">
-      半衿もオリジナルでご用意しており、<br>
-      装い全体のバランスまで丁寧に整えています。
-    </p>
-  </div>
-</section>
+      <!-- Strength -->
+      <section class="strength section">
+        <div class="container">
+          <p class="section__label">Strength</p>
 
+          <h2 class="section__title">美宵の強み</h2>
 
-<!-- Flow -->
-<section id="flow" class="flow section--alt">
-  <div class="container">
+          <div class="strength__list">
+            <article class="strength__item">
+              <span class="strength__number" aria-hidden="true">01</span>
 
-    <p class="section__label">Flow</p>
+              <div class="strength__inner">
+                <h3 class="strength__title">短時間でも、美しく整える</h3>
+                <p class="strength__text">
+                  限られた時間でも、品よく仕上げます。
+                </p>
+              </div>
 
-    <h2 class="section__title">
-      ご予約の流れ
-    </h2>
+              <span class="strength__en" aria-hidden="true">Beauty</span>
+            </article>
 
-    <div class="flow__layout">
+            <article class="strength__item">
+              <span class="strength__number" aria-hidden="true">02</span>
 
-      <!-- 左側：ご予約の流れ -->
-      <div class="flow__main">
+              <div class="strength__inner">
+                <h3 class="strength__title">着崩れしにくい安心感</h3>
+                <p class="strength__text">長時間でも、美しさを保ちます。</p>
+              </div>
 
-        <div class="flow__list">
+              <span class="strength__en" aria-hidden="true">Comfort</span>
+            </article>
 
-          <div class="flow__item">
-            <span class="flow__num">01</span>
-            <div class="flow__content">
-              <h3>LINEよりご相談</h3>
+            <article class="strength__item">
+              <span class="strength__number" aria-hidden="true">03</span>
+
+              <div class="strength__inner">
+                <h3 class="strength__title">完全予約制のプライベート対応</h3>
+                <p class="strength__text">一人ひとりに、丁寧に向き合います。</p>
+              </div>
+
+              <span class="strength__en" aria-hidden="true">Private</span>
+            </article>
+
+            <article class="strength__item">
+              <span class="strength__number" aria-hidden="true">04</span>
+
+              <div class="strength__inner">
+                <h3 class="strength__title">早朝・土日祝のご相談も可能</h3>
+                <p class="strength__text">
+                  結婚式や式典などの早い時間帯や、土日祝日のご予約も承ります。<br />
+                  お気軽にご相談ください。
+                </p>
+              </div>
+
+              <span class="strength__en" aria-hidden="true">Flexible</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profile -->
+      <section class="profile section--alt">
+        <div class="container">
+          <p class="section__label">Profile</p>
+          <h2 class="section__title">安心してお任せいただくために</h2>
+
+          <div class="profile__inner">
+            <div class="profile__img">
+              <img src="images/profile.jpg" alt="着付け師" />
+            </div>
+
+            <div class="profile__text">
+              <!-- 家紋 -->
+              <div class="profile__kamon">
+                <img src="images/yoi-kamon.svg" alt="板橋家の家紋" />
+              </div>
+
+              <h3>板橋 亜由美</h3>
+
               <p>
-                ご希望の日時や内容を、<br>
-                LINEよりお気軽にご相談ください。
+                一人ひとりに寄り添い、
+                大切な一日を美しく整えるお手伝いをしています。
+              </p>
+
+              <p>
+                着物をもっと自然に楽しんでいただけるよう、
+                半衿の制作も行っています。
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="flow__item">
-            <span class="flow__num">02</span>
-            <div class="flow__content">
-              <h3>日程・内容のご確認</h3>
-              <p>
-                ご希望に合わせて、<br>
-                日程や詳細を丁寧に確認させていただきます。
-              </p>
-            </div>
+      <!-- Style -->
+      <section id="style" class="style section">
+        <div class="container">
+          <p class="section__label">Style</p>
+          <h2 class="section__title">装いの仕上がり</h2>
+
+          <p class="style__lead">
+            細部まで整えた、美しい仕上がりをご覧ください。
+          </p>
+
+          <div class="style__gallery">
+            <img
+              src="images/style01.jpg"
+              class="style__img style__img--main js-lightbox"
+              data-index="0"
+              alt="薄紫の着物の衿元を整える着付けの様子"
+            />
+            <img
+              src="images/style02.jpg"
+              class="style__img style__img--right js-lightbox"
+              data-index="1"
+              alt="薄紫の着物と白い帯を合わせた着付けの正面姿"
+            />
+            <img
+              src="images/style03.jpg"
+              class="style__img style__img--left js-lightbox"
+              data-index="2"
+              alt="帯結びと衿元の仕上がりが分かる着物の後ろ姿"
+            />
           </div>
 
-          <div class="flow__item">
-            <span class="flow__num">03</span>
-            <div class="flow__content">
-              <h3>当日ご訪問・着付け</h3>
-             <p>
-               ご指定の場所へお伺いし、<br>
-               心地よくお過ごしいただけるよう、<br>
-               丁寧に着付けを行います。
-             </p>
-            </div>
-          </div>
+          <p class="style__text">
+            半衿もオリジナルでご用意しており、<br />
+            装い全体のバランスまで丁寧に整えています。
+          </p>
+        </div>
+      </section>
 
-      <div class="flow__item">
-            <span class="flow__num">04</span>
-            <div class="flow__content">
-              <h3>お支払い</h3>
-              <p>
-                当日または事前にご案内した方法にて、<br>
-                お支払いをお願いいたします。
-              </p>
+      <!-- Flow -->
+      <section id="flow" class="flow section--alt">
+        <div class="container">
+          <p class="section__label">Flow</p>
+
+          <h2 class="section__title">ご予約の流れ</h2>
+
+          <div class="flow__layout">
+            <!-- 左側：ご予約の流れ -->
+            <div class="flow__main">
+              <div class="flow__list">
+                <div class="flow__item">
+                  <span class="flow__num">01</span>
+                  <div class="flow__content">
+                    <h3>LINEよりご相談</h3>
+                    <p>
+                      ご希望の日時や内容を、<br />
+                      LINEよりお気軽にご相談ください。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flow__item">
+                  <span class="flow__num">02</span>
+                  <div class="flow__content">
+                    <h3>日程・内容のご確認</h3>
+                    <p>
+                      ご希望に合わせて、<br />
+                      日程や詳細を丁寧に確認させていただきます。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flow__item">
+                  <span class="flow__num">03</span>
+                  <div class="flow__content">
+                    <h3>当日ご訪問・着付け</h3>
+                    <p>
+                      ご指定の場所へお伺いし、<br />
+                      心地よくお過ごしいただけるよう、<br />
+                      丁寧に着付けを行います。
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flow__item">
+                  <span class="flow__num">04</span>
+                  <div class="flow__content">
+                    <h3>お支払い</h3>
+                    <p>
+                      当日または事前にご案内した方法にて、<br />
+                      お支払いをお願いいたします。
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-         </div>
-      </div>
+          </div>
 
-    </div>
+          <!-- LINEへの導線 -->
+          <div class="flow__cta">
+            <p class="flow__cta-text">
+              ご不明点がある方も、まずはLINEよりお気軽にご相談ください。
+            </p>
 
-    <!-- LINEへの導線 -->
-    <div class="flow__cta">
-
-      <p class="flow__cta-text">
-        ご不明点がある方も、まずはLINEよりお気軽にご相談ください。
-      </p>
-
-      <a href="#reserve" class="btn btn--primary">
-        LINEで相談する
-      </a>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- Voice -->
-<section class="voice section">
-  <div class="container">
-
-    <div class="section-head center">
-      <p class="section__label">Voice</p>
-      <h2 class="section__title">お客様からいただいたお声</h2>
-
-      <div class="voice__divider" aria-hidden="true">
-        <span>❈</span>
-      </div>
-
-      <p class="voice__lead">
-        一つひとつのご縁を大切にしながら、<br>
-        お客様からいただいたお声をご紹介します。
-      </p>
-    </div>
-
-    <div class="voice-slider">
-
-      <div class="voice-slider__viewport">
-        <div class="voice-slider__track">
-
-          <article class="voice-card">
-  <span class="voice-card__quote" aria-hidden="true">“</span>
-
-  <p class="voice-card__text">
-    朝から夕方まで着崩れることなく、<br>
-    安心して過ごせました。<br>
-    苦しくないのに綺麗で感動しました。
-  </p>
-
-  <span class="voice-card__line"></span>
-
-  <p class="voice-card__customer">
-    七五三をご利用のお客様
-  </p>
-</article>
-
-<article class="voice-card">
-  <span class="voice-card__quote" aria-hidden="true">“</span>
-
-  <p class="voice-card__text">
-    初めての着付けで緊張していましたが、<br>
-    丁寧に対応してくださり、<br>
-    安心してお任せできました。
-  </p>
-
-  <span class="voice-card__line"></span>
-
-  <p class="voice-card__customer">
-    お出かけ着付けをご利用のお客様
-  </p>
-</article>
-
-<article class="voice-card">
-  <span class="voice-card__quote" aria-hidden="true">“</span>
-
-  <p class="voice-card__text">
-    自宅まで来ていただけたので、<br>
-    小さな子どもがいても慌てることなく、<br>
-    ゆったりと準備できました。
-  </p>
-
-  <span class="voice-card__line"></span>
-
-  <p class="voice-card__customer">
-    お宮参りをご利用のお客様
-  </p>
-</article>
-
-<article class="voice-card">
-  <span class="voice-card__quote" aria-hidden="true">“</span>
-
-  <p class="voice-card__text">
-    大切な一日を気持ちよく迎えられました。<br>
-    最後まで着崩れることもなく、<br>
-    またお願いしたいと思いました。
-  </p>
-
-  <span class="voice-card__line"></span>
-
-  <p class="voice-card__customer">
-    結婚式参列のお客様
-  </p>
-</article>
-
+            <a href="#reserve" class="btn btn--primary"> LINEで相談する </a>
+          </div>
         </div>
+      </section>
+
+      <!-- Voice -->
+      <section class="voice section">
+        <div class="container">
+          <div class="section-head center">
+            <p class="section__label">Voice</p>
+            <h2 class="section__title">お客様からいただいたお声</h2>
+
+            <div class="voice__divider" aria-hidden="true">
+              <span>❈</span>
+            </div>
+
+            <p class="voice__lead">
+              一つひとつのご縁を大切にしながら、<br />
+              お客様からいただいたお声をご紹介します。
+            </p>
+          </div>
+
+          <div class="voice-slider">
+            <div class="voice-slider__viewport">
+              <div class="voice-slider__track">
+                <article class="voice-card">
+                  <span class="voice-card__quote" aria-hidden="true">“</span>
+
+                  <p class="voice-card__text">
+                    朝から夕方まで着崩れることなく、<br />
+                    安心して過ごせました。<br />
+                    苦しくないのに綺麗で感動しました。
+                  </p>
+
+                  <span class="voice-card__line"></span>
+
+                  <p class="voice-card__customer">七五三をご利用のお客様</p>
+                </article>
+
+                <article class="voice-card">
+                  <span class="voice-card__quote" aria-hidden="true">“</span>
+
+                  <p class="voice-card__text">
+                    初めての着付けで緊張していましたが、<br />
+                    丁寧に対応してくださり、<br />
+                    安心してお任せできました。
+                  </p>
+
+                  <span class="voice-card__line"></span>
+
+                  <p class="voice-card__customer">
+                    お出かけ着付けをご利用のお客様
+                  </p>
+                </article>
+
+                <article class="voice-card">
+                  <span class="voice-card__quote" aria-hidden="true">“</span>
+
+                  <p class="voice-card__text">
+                    自宅まで来ていただけたので、<br />
+                    小さな子どもがいても慌てることなく、<br />
+                    ゆったりと準備できました。
+                  </p>
+
+                  <span class="voice-card__line"></span>
+
+                  <p class="voice-card__customer">お宮参りをご利用のお客様</p>
+                </article>
+
+                <article class="voice-card">
+                  <span class="voice-card__quote" aria-hidden="true">“</span>
+
+                  <p class="voice-card__text">
+                    大切な一日を気持ちよく迎えられました。<br />
+                    最後まで着崩れることもなく、<br />
+                    またお願いしたいと思いました。
+                  </p>
+
+                  <span class="voice-card__line"></span>
+
+                  <p class="voice-card__customer">結婚式参列のお客様</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="voice-slider__dots" aria-label="お客様の声を切り替える">
+              <button
+                class="voice-slider__dot is-active"
+                type="button"
+                aria-label="1件目のお声を表示"
+                aria-current="true"
+              ></button>
+
+              <button
+                class="voice-slider__dot"
+                type="button"
+                aria-label="2件目のお声を表示"
+              ></button>
+
+              <button
+                class="voice-slider__dot"
+                type="button"
+                aria-label="3件目のお声を表示"
+              ></button>
+
+              <button
+                class="voice-slider__dot"
+                type="button"
+                aria-label="4件目のお声を表示"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="faq section--alt">
+        <div class="container">
+          <p class="section__label">FAQ</p>
+          <h2 class="section__title">よくあるご質問</h2>
+
+          <div class="faq__list">
+            <!-- 着付け時間 -->
+            <div class="faq__item">
+              <p class="faq__q">Q. 着付け時間はどのくらいですか？</p>
+              <p class="faq__a">
+                A. 訪問着・色無地は約30〜40分、振袖は約40〜60分が目安です。<br />
+                お着物の種類や内容によって前後するため、ご予約時にご案内いたします。
+              </p>
+            </div>
+
+            <!-- 持ち物・準備 -->
+            <div class="faq__item">
+              <p class="faq__q">Q. 持ち物は何を準備すればよいですか？</p>
+              <p class="faq__a">
+                A.
+                お着物の種類に合わせて、必要なものを事前にご案内いたします。<br />
+                LINEでお写真をお送りいただければ、事前確認も可能ですのでご安心ください。
+              </p>
+            </div>
+
+            <!-- 対応エリア -->
+            <div class="faq__item">
+              <p class="faq__q">Q. 対応エリアを教えてください。</p>
+              <p class="faq__a">
+                A.
+                京都市の中京区・右京区（京北地域を除く）・北区・上京区・西京区を中心に対応しております。<br />
+                その他の地域もお気軽にご相談ください。
+              </p>
+            </div>
+
+            <!-- キャンセル -->
+            <div class="faq__item">
+              <p class="faq__q">Q. キャンセルはできますか？</p>
+              <p class="faq__a">
+                A. キャンセルのご連絡は、前日17:00までにお願いいたします。<br />
+                前日17:00以降のキャンセルは当日キャンセル扱いとなり、
+                ご予約料金の100％を頂戴いたします。<br />
+                ご事情がある場合は、お早めにご相談ください。
+              </p>
+            </div>
+          </div>
+
+          <p class="faq__note">
+            その他のご質問も、<br class="sp-only" />
+            LINEよりお気軽にご相談ください。
+          </p>
+        </div>
+
+        <div class="faq__image">
+          <img src="images/faq.jpg" alt="和を感じさせる部屋のイメージ" />
+        </div>
+      </section>
+
+      <!-- Reserve -->
+      <section id="reserve" class="reserve">
+        <div class="container">
+          <p class="reserve__label">Reserve</p>
+
+          <h2 class="reserve__title">
+            大切な一日を、<br />
+            安心して迎えるために。
+          </h2>
+
+          <div class="reserve__divider" aria-hidden="true">
+            <span>❈</span>
+          </div>
+
+          <p class="reserve__text">
+            ご予約・ご相談はLINEより、<br />
+            お気軽にご連絡ください。
+          </p>
+
+          <div class="reserve__buttons">
+            <a
+              href="https://www.linebiz.com/jp/service/line-official-account/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="reserve__btn reserve__btn--line"
+            >
+              LINEでご予約・ご相談
+            </a>
+
+            <a
+              href="https://www.instagram.com/yoi.kimono"
+              class="reserve__btn reserve__btn--instagram"
+            >
+              Instagramで着付け事例を見る
+            </a>
+          </div>
+
+          <p class="reserve__note">
+            半衿の新作や、日々の装いのご提案は<br />
+            Instagramにてご覧いただけます。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img
+            src="images/logo.png"
+            alt="美宵 - YOI -"
+            class="footer__logo-img"
+          />
+
+          <p class="footer__logo-text">美宵 <span>- YOI -</span></p>
+
+          <p class="footer__message">古き良き装いを、今の暮らしに。</p>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="index.html#service">Service</a>
+          <a href="index.html#menu">Menu</a>
+          <a href="index.html#style">Style</a>
+          <a href="index.html#flow">Flow</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#reserve">Reserve</a>
+        </nav>
       </div>
 
-      <div class="voice-slider__dots" aria-label="お客様の声を切り替える">
-        <button
-          class="voice-slider__dot is-active"
-          type="button"
-          aria-label="1件目のお声を表示"
-          aria-current="true"
-        ></button>
-
-        <button
-          class="voice-slider__dot"
-          type="button"
-          aria-label="2件目のお声を表示"
-        ></button>
-
-        <button
-          class="voice-slider__dot"
-          type="button"
-          aria-label="3件目のお声を表示"
-        ></button>
-
-        <button
-          class="voice-slider__dot"
-          type="button"
-          aria-label="4件目のお声を表示"
-        ></button>
+      <div class="footer__links">
+        <a href="policy.html">プライバシーポリシー</a>
+        <a href="law.html">特定商取引法に基づく表記</a>
       </div>
 
+      <p class="footer__copy">© 美宵 - YOI -</p>
+    </footer>
+
+    <a href="..." class="fixed-line is-hidden"> LINEで予約 </a>
+
+    <div class="lightbox" id="lightbox">
+      <button
+        class="lightbox__close"
+        id="lightboxClose"
+        type="button"
+        aria-label="画像を閉じる"
+      >
+        ×
+      </button>
+
+      <button
+        class="lightbox__prev"
+        id="lightboxPrev"
+        type="button"
+        aria-label="前の画像へ"
+      >
+        ‹
+      </button>
+
+      <img alt="" class="lightbox__img" id="lightboxImg" />
+
+      <button
+        class="lightbox__next"
+        id="lightboxNext"
+        type="button"
+        aria-label="次の画像へ"
+      >
+        ›
+      </button>
     </div>
 
-  </div>
-</section>
-
-<!-- FAQ -->
-  <section id="faq" class="faq section--alt">
-  <div class="container">
-    <p class="section__label">FAQ</p>
-    <h2 class="section__title">よくあるご質問</h2>
-
-    <div class="faq__list">
-
-      
-<!-- 着付け時間 -->
-<div class="faq__item">
-  <p class="faq__q">Q. 着付け時間はどのくらいですか？</p>
-  <p class="faq__a">
-    A. 訪問着・色無地は約30〜40分、振袖は約40〜60分が目安です。<br>
-    お着物の種類や内容によって前後するため、ご予約時にご案内いたします。
-  </p>
-</div>
-
-<!-- 持ち物・準備 -->
-<div class="faq__item">
-  <p class="faq__q">Q. 持ち物は何を準備すればよいですか？</p>
-  <p class="faq__a">
-    A. お着物の種類に合わせて、必要なものを事前にご案内いたします。<br>
-    LINEでお写真をお送りいただければ、事前確認も可能ですのでご安心ください。
-  </p>
-</div>
-
-<!-- 対応エリア -->
-<div class="faq__item">
-  <p class="faq__q">Q. 対応エリアを教えてください。</p>
-  <p class="faq__a">
-    A. 京都市の中京区・右京区（京北地域を除く）・北区・上京区・西京区を中心に対応しております。<br>
-    その他の地域もお気軽にご相談ください。
-  </p>
-</div>
-
-
-<!-- キャンセル -->
-<div class="faq__item">
-  <p class="faq__q">Q. キャンセルはできますか？</p>
-  <p class="faq__a">
-    A. キャンセルのご連絡は、前日17:00までにお願いいたします。<br>
-    前日17:00以降のキャンセルは当日キャンセル扱いとなり、
-    ご予約料金の100％を頂戴いたします。<br>
-    ご事情がある場合は、お早めにご相談ください。
-  </p>
-</div>
-
-    </div>
-
-    <p class="faq__note">
-      その他のご質問も、<br class="sp-only">
-      LINEよりお気軽にご相談ください。
-    </p>
-
-  </div>
-
-   <div class="faq__image">
-    <img src="images/faq.jpg" alt="和を感じさせる部屋のイメージ">
-  </div>
-
-</section>
-
-  <!-- Reserve -->
-  <section id="reserve" class="reserve">
-  <div class="container">
-
-    <p class="reserve__label">Reserve</p>
-
-    <h2 class="reserve__title">
-      大切な一日を、<br>
-      安心して迎えるために。
-    </h2>
-
-    <div class="reserve__divider" aria-hidden="true">
-      <span>❈</span>
-    </div>
-
-    <p class="reserve__text">
-      ご予約・ご相談はLINEより、<br>
-      お気軽にご連絡ください。
-    </p>
-
-    <div class="reserve__buttons">
-      <a href="https://www.linebiz.com/jp/service/line-official-account/"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="reserve__btn reserve__btn--line">
-        LINEでご予約・ご相談
-      </a>
-
-      <a href="https://www.instagram.com/yoi.kimono" class="reserve__btn reserve__btn--instagram">
-        Instagramで着付け事例を見る
-      </a>
-    </div>
-
-    <p class="reserve__note">
-      半衿の新作や、日々の装いのご提案は<br>
-      Instagramにてご覧いただけます。
-    </p>
-
-  </div>
-</section>
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer__inner">
-
-    <div class="footer__brand">
-      <img src="images/logo.png" alt="美宵 - YOI -" class="footer__logo-img">
-
-      <p class="footer__logo-text">
-        美宵 <span>- YOI -</span>
-      </p>
-
-      <p class="footer__message">
-  古き良き装いを、今の暮らしに。
-</p>
-
-    </div>
-
-    <nav class="footer__nav">
-     <a href="index.html#service">Service</a>
-<a href="index.html#menu">Menu</a>
-<a href="index.html#style">Style</a>
-<a href="index.html#flow">Flow</a>
-<a href="index.html#faq">FAQ</a>
-<a href="index.html#reserve">Reserve</a>
-    </nav>
-
-  </div>
-
-  <div class="footer__links">
-    <a href="policy.html">プライバシーポリシー</a>
-    <a href="law.html">特定商取引法に基づく表記</a>
-  </div>
-
-  <p class="footer__copy">© 美宵 - YOI -</p>
-</footer>
-
-     <a href="..." class="fixed-line is-hidden">
-       LINEで予約
-     </a>
-
-<div class="lightbox" id="lightbox">
-  <button class="lightbox__close" id="lightboxClose"
-        type="button" aria-label="画像を閉じる">×</button>
-
-  <button class="lightbox__prev" id="lightboxPrev"
-        type="button" aria-label="前の画像へ">‹</button>
-
-  <img alt="" class="lightbox__img" id="lightboxImg">
-
-  <button class="lightbox__next" id="lightboxNext" type="button" aria-label="次の画像へ">›</button>
-</div>
-
- <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

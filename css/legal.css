@@ -1,4 +1,3 @@
-
 /* =========================
   Legal Pages
   Privacy Policy / Law
@@ -65,7 +64,6 @@
 ========================= */
 
 @media (max-width: 767px) {
-
   .policy-page {
     padding: 72px 0 88px;
   }
@@ -97,15 +95,13 @@
   ナビ表示中は固定LINEを非表示
 ========================= */
 
-body:has(#headernav.is-open) .fixed-line {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateY(12px);
+  body:has(#headernav.is-open) .fixed-line {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(12px);
+  }
 }
-
-}
-
 
 /* =========================
   Legal Pages / Gradient OFF

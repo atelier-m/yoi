@@ -7,7 +7,7 @@ toggle.addEventListener("click", () => {
   menu.classList.toggle("is-open");
 });
 
-menu.querySelectorAll("a").forEach(link => {
+menu.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     toggle.classList.remove("active");
     menu.classList.remove("is-open");
@@ -15,19 +15,22 @@ menu.querySelectorAll("a").forEach(link => {
 });
 
 // Strength スクロール表示
-const strengthItems = document.querySelectorAll('.strength__item');
+const strengthItems = document.querySelectorAll(".strength__item");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('is-show');
-    }
-  });
-}, {
-  threshold: 0.2
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-show");
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  },
+);
 
-strengthItems.forEach(item => observer.observe(item));
+strengthItems.forEach((item) => observer.observe(item));
 
 // スタイルギャラリーのライトボックス
 const lightboxImages = document.querySelectorAll(".js-lightbox");
@@ -41,7 +44,7 @@ let currentIndex = 0;
 
 const imageList = Array.from(lightboxImages).map((img) => ({
   src: img.src,
-  alt: img.alt
+  alt: img.alt,
 }));
 
 function updateLightboxImage() {
@@ -104,8 +107,7 @@ if (voiceTrack && voiceCards.length && voiceDots.length) {
     }
 
     const viewportCenter = viewport.clientWidth / 2;
-    const cardCenter =
-      activeCard.offsetLeft + activeCard.offsetWidth / 2;
+    const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
 
     const translateX = viewportCenter - cardCenter;
 
@@ -144,9 +146,7 @@ if (voiceTrack && voiceCards.length && voiceDots.length) {
    Fixed LINE / Reserve
 ========================= */
 
-const reserveSection = document.querySelector(
-  "#reserve, .menu-cta"
-);
+const reserveSection = document.querySelector("#reserve, .menu-cta");
 
 const fixedLineButton = document.querySelector(".fixed-line");
 
@@ -159,7 +159,7 @@ if (reserveSection && fixedLineButton) {
 
     fixedLineButton.classList.toggle(
       "is-hidden",
-      !hasScrolled || isReserveVisible
+      !hasScrolled || isReserveVisible,
     );
   }
 
@@ -170,15 +170,15 @@ if (reserveSection && fixedLineButton) {
       updateFixedLine();
     },
     {
-      threshold: 0
-    }
+      threshold: 0,
+    },
   );
 
   reserveObserver.observe(reserveSection);
 
   // スクロール位置を監視
   window.addEventListener("scroll", updateFixedLine, {
-    passive: true
+    passive: true,
   });
 
   // ページ読み込み時にも判定
