@@ -761,6 +761,7 @@ main {
 
 .menu {
   text-align: center;
+  background: var(--bg-main);
 }
 
 .menu__lead {
