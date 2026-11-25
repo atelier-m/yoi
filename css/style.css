@@ -666,6 +666,7 @@ main {
 ========================= */
 .service {
   text-align: center;
+  position: relative;
 }
 
 .service__lead {
@@ -737,6 +738,21 @@ main {
   transform: translate(-50%, -50%) rotate(-18deg);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 55% 75%, 55% 100%, 0 100%);
   pointer-events: none;
+}
+
+/* Service 波の装飾 */
+.service__wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.service__wave img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* =========================
