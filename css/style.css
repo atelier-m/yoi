@@ -735,8 +735,7 @@ main {
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-18deg);
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 55% 75%, 55% 100%, 0 100%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
