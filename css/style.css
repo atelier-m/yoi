@@ -876,6 +876,7 @@ main {
 
 .area {
   text-align: center;
+  position: relative;
 }
 
 .area__content {
@@ -1007,6 +1008,22 @@ main {
 
 .area__detail-link:hover::after {
   transform: translateX(4px);
+}
+
+/* Area 波の装飾 */
+.area__wave {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  transform: scaleY(-1);
+}
+
+.area__wave img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* =========================
