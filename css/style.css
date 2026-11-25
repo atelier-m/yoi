@@ -74,26 +74,12 @@ img {
 
 .section {
   padding: var(--section-space-sp) 0;
-
-  background:
-    radial-gradient(
-      circle at 20% 10%,
-      rgba(255, 255, 255, 0.45),
-      transparent 34%
-    ),
-    var(--bg-main);
+  background: var(--bg-main);
 }
 
 .section--alt {
   padding: var(--section-space-sp) 0;
-
-  background:
-    radial-gradient(
-      circle at 80% 15%,
-      rgba(255, 255, 255, 0.35),
-      transparent 36%
-    ),
-    var(--bg-soft);
+  background: var(--bg-soft);
 }
 
 .section__label {
@@ -760,7 +746,6 @@ main {
 
 .menu {
   text-align: center;
-  background: var(--bg-main);
 }
 
 .menu__lead {
@@ -1131,7 +1116,7 @@ main {
 /* Strength 上部の装飾 */
 .strength__decoration {
   position: absolute;
-  top: -1px;
+  bottom: calc(100% - 1px);
   left: 0;
   width: 100%;
   pointer-events: none;
