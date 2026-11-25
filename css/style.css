@@ -2758,7 +2758,6 @@ main {
   }
 
   /* Strength */
-
   .strength__item {
     grid-template-columns: 42px minmax(0, 1fr);
     column-gap: 14px;
