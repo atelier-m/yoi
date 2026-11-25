@@ -862,6 +862,7 @@ main {
 .area {
   text-align: center;
   position: relative;
+  padding-bottom: calc(var(--section-space-sp) + 60px);
 }
 
 .area__content {
@@ -1116,7 +1117,7 @@ main {
 /* Strength 上部の装飾 */
 .strength__decoration {
   position: absolute;
-  bottom: calc(100% - 1px);
+  bottom: calc(100% - 2px);
   left: 0;
   width: 100%;
   pointer-events: none;
