@@ -46,6 +46,27 @@
   background-image: url("../images/menu_sakura_bottom_right.png");
 }
 
+/* 大人の着付け */
+.menu-section--adult {
+  position: relative;
+}
+
+/* 大人の着付け 上部の装飾 */
+.adult__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.adult__decoration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* 見出し共通 */
 .menu-heading {
   margin-bottom: 36px;
@@ -470,6 +491,14 @@
   .menu-hero::after {
     right: -90px;
     bottom: -50px;
+  }
+
+  /* 大人の着付け 上部の装飾 */
+  .adult__decoration img {
+    width: 250%;
+    max-width: none;
+    height: auto;
+    margin-left: -75%;
   }
 
   .menu-layout,
