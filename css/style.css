@@ -1145,6 +1145,25 @@ main {
 /* =========================
   Profile
 ========================= */
+.profile {
+  position: relative;
+}
+
+/* Profile 上部の装飾 */
+.profile__decoration {
+  position: absolute;
+  bottom: calc(100% - 2px);
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* 装飾画像 */
+.profile__decoration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .profile__inner {
   margin-top: 40px;
@@ -2795,6 +2814,20 @@ main {
 
   .strength__en {
     display: none;
+  }
+
+  /* Profile 上部の装飾 */
+  .profile__decoration {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+
+  .profile__decoration img {
+    width: 250%;
+    max-width: none;
+    height: auto;
+    margin-left: -75%;
   }
 
   /* Style 装飾 */
