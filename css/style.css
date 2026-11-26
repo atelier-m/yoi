@@ -2854,6 +2854,7 @@ main {
     width: 100%;
     left: 0;
     transform: none;
+    overflow: hidden;
   }
 
   .profile__decoration img {
