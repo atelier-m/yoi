@@ -89,6 +89,12 @@
   height: auto;
 }
 
+/* 装飾下の余白調整 */
+.menu-section--adult .menu-heading,
+.menu-section--children .menu-heading {
+  padding-top: 30px;
+}
+
 /* 見出し共通 */
 .menu-heading {
   margin-bottom: 36px;
@@ -185,20 +191,29 @@
 }
 
 .usage-item {
-  padding: 24px 22px;
+  position: relative;
+  padding: 36px 40px;
 
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
+  border: 1px solid #c1b094;
+  border-radius: 0;
 
   background: rgba(255, 250, 245, 0.72);
+}
 
-  box-shadow:
-    0 16px 40px rgba(28, 47, 74, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+/* 内側の装飾枠 */
+.usage-item::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px solid #c1b094;
+  pointer-events: none;
 }
 
 .usage-item__label {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #c1b094;
 
   font-family: var(--font-serif);
   font-size: 16px;
@@ -271,6 +286,47 @@
 .menu-layout--children .menu-layout__content {
   grid-column: 2;
   grid-row: 1;
+}
+
+/* 追加料金カードの四隅の装飾 */
+.usage-item {
+  position: relative;
+}
+
+.fee-corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url("../images/fee-corner.svg") no-repeat center;
+  background-size: contain;
+  pointer-events: none;
+}
+
+/* 左上 */
+.fee-corner--tl {
+  top: 6px;
+  left: 6px;
+}
+
+/* 右上 */
+.fee-corner--tr {
+  top: 6px;
+  right: 6px;
+  transform: rotate(90deg);
+}
+
+/* 左下 */
+.fee-corner--bl {
+  bottom: 6px;
+  left: 6px;
+  transform: rotate(-90deg);
+}
+
+/* 右下 */
+.fee-corner--br {
+  bottom: 6px;
+  right: 6px;
+  transform: rotate(180deg);
 }
 
 /* =========================
@@ -529,6 +585,12 @@
     max-width: none;
     height: auto;
     margin-left: -75%;
+  }
+
+  /* 装飾下の余白調整 */
+  .menu-section--adult .menu-heading,
+  .menu-section--children .menu-heading {
+    padding-top: 10px;
   }
 
   .menu-layout,
