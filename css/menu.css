@@ -59,9 +59,31 @@
   width: 100%;
   overflow: hidden;
   pointer-events: none;
+  z-index: 2;
 }
 
 .adult__decoration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 七五三・お子さま */
+.menu-section--children {
+  position: relative;
+}
+
+/* 七五三・お子さま 上部の装飾 */
+.children__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.children__decoration img {
   display: block;
   width: 100%;
   height: auto;
@@ -495,6 +517,14 @@
 
   /* 大人の着付け 上部の装飾 */
   .adult__decoration img {
+    width: 250%;
+    max-width: none;
+    height: auto;
+    margin-left: -75%;
+  }
+
+  /* 七五三・お子さま 上部の装飾 */
+  .children__decoration img {
     width: 250%;
     max-width: none;
     height: auto;
