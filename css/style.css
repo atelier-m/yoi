@@ -1758,7 +1758,24 @@ main {
 }
 
 .faq {
+  position: relative;
   text-align: center;
+}
+
+/* FAQ 上部の装飾 */
+.faq__decoration {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.faq__decoration img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .faq__list {
@@ -2920,6 +2937,14 @@ main {
 
   /* Voice 境界の装飾 */
   .voice__decoration img {
+    width: 150%;
+    max-width: none;
+    height: auto;
+    margin-left: -25%;
+  }
+
+  /* FAQ 境界の装飾 */
+  .faq__decoration img {
     width: 150%;
     max-width: none;
     height: auto;
