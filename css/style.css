@@ -1343,6 +1343,22 @@ main {
   padding-bottom: 120px;
 }
 
+/* Style 上部の装飾 */
+.style__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(-30%);
+  pointer-events: none;
+}
+
+.style__decoration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ライトボックス */
 .lightbox {
   position: fixed;
@@ -1532,7 +1548,24 @@ main {
 ========================= */
 
 .voice {
+  position: relative;
   overflow: hidden;
+}
+
+/* Voice 境界の装飾 */
+.voice__decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.voice__decoration img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Voice 装飾ライン */
@@ -2847,6 +2880,22 @@ main {
     bottom: 25px;
   }
 
+  /* Style 境界の装飾 */
+  .style__decoration {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .style__decoration img {
+    width: 150%;
+    max-width: none;
+    height: auto;
+    margin-left: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   /* Flow */
 
   .flow {
@@ -2866,6 +2915,14 @@ main {
   .voice .section__title {
     font-size: 22px;
     letter-spacing: 0.02em;
+  }
+
+  /* Voice 境界の装飾 */
+  .voice__decoration img {
+    width: 150%;
+    max-width: none;
+    height: auto;
+    margin-left: -25%;
   }
 
   /* Reserve */
